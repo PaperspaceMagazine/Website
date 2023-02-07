@@ -1,0 +1,21 @@
+{
+    "mainPage": {
+        "tabBanner": "Paperspace | Magazine",
+        "summary": "Paperspace is a biannual magazine blah blah blah",
+        "latestIssueNo": "N° 19 – Systems"
+    },
+    "aboutPage": {
+        "editorsInChief": "Daria Shiryaeva <br> Jesper Jay"
+    },
+    "issues": [
+    {
+        "title": "N° 19 – Systems",
+        "description": "This is the description of the N° 19 blah blah blah",
+        "editorsNote": "Editors note for N° 19 blah blah"
+    },
+    {
+        "title": "N° 18 – Joyful Transgressions",
+        "description": "This is the description of the N° 18 blah blah blah",
+        "editorsNote": "Editors note for N° 18 blah blah"
+    }]
+}
