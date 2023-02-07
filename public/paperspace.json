@@ -1,20 +1,23 @@
 {
     "mainPage": {
         "tabBanner": "Paperspace | Magazine",
-        "summary": "Paperspace is a biannual magazine blah blah blah",
-        "latestIssueNo": "N° 19 – Systems"
+        "summary": "Paperspace is a biannual magazine blah blah blah"
     },
     "aboutPage": {
-        "editorsInChief": "Daria Shiryaeva <br> Jesper Jay"
+        "description": "We are a student run magazine blah blah blah",
+        "editorsInChief": ["Daria Shiryaeva", "Jesper-Jay Harrington"],
+        "graphicsEditors": ["Bob Dylan", "Elon Musk"],
+        "articleEditors": ["Elton John", "Pink Floyd"],
+        "socialMediaCoordinators": ["Frank Sinatra"]
     },
     "issues": [
     {
-        "title": "N° 19 – Systems",
+        "title": "N° 19 - Systems",
         "description": "This is the description of the N° 19 blah blah blah",
         "editorsNote": "Editors note for N° 19 blah blah"
     },
     {
-        "title": "N° 18 – Joyful Transgressions",
+        "title": "N° 18 - Joyful Transgressions",
         "description": "This is the description of the N° 18 blah blah blah",
         "editorsNote": "Editors note for N° 18 blah blah"
     }]
