@@ -5,21 +5,132 @@
     },
     "aboutPage": {
         "description": "We are a student run magazine blah blah blah",
-        "editorsInChief": ["Daria Shiryaeva", "Jesper-Jay Harrington"],
-        "graphicsEditors": ["Bob Dylan", "Elon Musk"],
-        "articleEditors": ["Elton John", "Pink Floyd"],
-        "socialMediaCoordinators": ["Frank Sinatra"],
-        "sponsorImage": "images/sponsors.png"
+        "sponsorImage": "images/sponsors.png",
+        "team": [
+            {
+                "year": "2023",
+                "editorsInChief": [
+                    "Daria Shiryaeva",
+                    "Jesper-Jay Harrington"
+                ],
+                "graphicsEditors": [
+                    "Bob Dylan",
+                    "Elon Musk"
+                ],
+                "articleEditors": [
+                    "Elton John",
+                    "Pink Floyd"
+                ],
+                "socialMediaCoordinators": [
+                    "Frank Sinatra"
+                ]
+            },
+            {
+                "year": "2022",
+                "editorsInChief": [
+                    "Bob Shiryaeva",
+                    "Bob-Jay Harrington"
+                ],
+                "graphicsEditors": [
+                    "Bob Dylan",
+                    "Elon Musk"
+                ],
+                "articleEditors": [
+                    "Elton John",
+                    "Pink Floyd"
+                ],
+                "socialMediaCoordinators": [
+                    "Frank Sinatra"
+                ]
+            },
+            {
+                "year": "2021",
+                "editorsInChief": [
+                    "James Shiryaeva",
+                    "B-Jay Harrington"
+                ],
+                "graphicsEditors": [
+                    "Bob Dylan",
+                    "Elon Musk"
+                ],
+                "articleEditors": [
+                    "Elton John",
+                    "Pink Floyd"
+                ],
+                "socialMediaCoordinators": [
+                    "Frank Sinatra"
+                ]
+            },
+            {
+                "year": "2020",
+                "editorsInChief": [
+                    "Banter Shiryaeva",
+                    "B-Jay Harrington"
+                ],
+                "graphicsEditors": [
+                    "Bob Dylan",
+                    "Elon Musk"
+                ],
+                "articleEditors": [
+                    "Emo John",
+                    "Pink Floyd"
+                ],
+                "socialMediaCoordinators": [
+                    "Frank Sinatra"
+                ]
+            }
+        ]
     },
     "issues": [
-    {
-        "title": "N° 19 - Systems",
-        "description": "This is the description of the N° 19 blah blah blah",
-        "editorsNote": "Editors note for N° 19 blah blah"
-    },
-    {
-        "title": "N° 18 - Joyful Transgressions",
-        "description": "This is the description of the N° 18 blah blah blah",
-        "editorsNote": "Editors note for N° 18 blah blah"
-    }]
+        {
+            "title": "N° 19 - Systems",
+            "description": "This is the description of the N° 19 blah blah blah",
+            "editorsNote": "Editors note for N° 19 blah blah"
+        },
+        {
+            "title": "N° 18 - Joyful Transgressions",
+            "description": "This is the description of the N° 18 blah blah blah",
+            "editorsNote": "Editors note for N° 18 blah blah"
+        }
+    ],
+    "latestMagazineCovers":
+    [
+        {
+            "coverImage": "images/issue18.png",
+            "url": "https://issuu.com/bathpaperspace/docs/221001_joyful_transgressions"
+        },
+        {
+            "coverImage": "images/issue17.png",
+            "url": "https://issuu.com/bathpaperspace/docs/220321_intimacy_"
+        },
+        {
+            "coverImage": "images/issue16.png",
+            "url": "https://issuu.com/bathpaperspace/docs/issuu_6"
+        },
+        {
+            "coverImage": "images/issue15.png",
+            "url": "https://issuu.com/bathpaperspace/docs/anarchy_paperspace_010221"
+        },
+        {
+            "coverImage": "images/issue18.png",
+            "url": "https://issuu.com/bathpaperspace/docs/221001_joyful_transgressions"
+        },
+        {
+            "coverImage": "images/issue17.png",
+            "url": "https://issuu.com/bathpaperspace/docs/220321_intimacy_"
+        },
+        {
+            "coverImage": "images/issue16.png",
+            "url": "https://issuu.com/bathpaperspace/docs/issuu_6"
+        },
+        {
+            "coverImage": "images/issue15.png",
+            "url": "https://issuu.com/bathpaperspace/docs/anarchy_paperspace_010221"
+        },
+        {
+            "coverImage": "images/issue15.png",
+            "url": "https://issuu.com/bathpaperspace/docs/anarchy_paperspace_010221"
+        }
+
+    ]
 }

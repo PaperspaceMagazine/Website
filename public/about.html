@@ -120,10 +120,10 @@
                 <div class="about">
                     <h1 class="text-block stories nodisplay">ABOUT Paperspace</h1>
                     <h1 class="p about" id="aboutPageDescription"></h1>
-                    <div class="p" id="editorsInChief">EDITORS-IN-CHIEF <br></div>
-                    <div class="p" id="graphicsEditors">GRAPHICS&nbsp;EDITORS <br></div>
-                    <div class="p" id="articleEditors">ARTICLE&nbsp;EDITORS <br></div>
-                    <div class="p" id="socialMediaCoordinators">SOCIAL&nbsp;MEDIA&nbsp;COORDINATOR <br></div>
+                    <div class="p" id="latestEditorsInChief">EDITORS-IN-CHIEF <br></div>
+                    <div class="p" id="latestGraphicsEditors">GRAPHICS&nbsp;EDITORS <br></div>
+                    <div class="p" id="latestArticleEditors">ARTICLE&nbsp;EDITORS <br></div>
+                    <div class="p" id="latestSocialMediaCoordinators">SOCIAL&nbsp;MEDIA&nbsp;COORDINATOR <br></div>
                     <div class="p"><a href="http://www.willpowell.uk" target="_blank"
                             class="textlink">WEBSITE<br>Will Powell</a></div>
                 </div>
@@ -133,10 +133,10 @@
                 <div class="stockists divhidden" style="display: none;">
                     <div class="australia">
                         <div class="countries">
-                            <p class="p">2022</p>
+                            <p class="p" id="previousYears"></p>
                         </div>
                         <div class="shops">
-                            <p class="p" id="previousEditors">EDITORS-IN-CHIEF <br></p>
+                            <p class="p" id="previousEditors"></p>
                         </div>
                     </div>
                 </div>
@@ -195,7 +195,7 @@
     </script>        
 
 </body>
-<script type="text/javascript">
+<script>
     fetch('paperspace.json')
         .then(response => response.json())
         .then(data => {
@@ -208,11 +208,26 @@
             document.getElementById('sponsorsImg').appendChild(img)
 
             document.querySelector('#aboutPageDescription').innerText = data.aboutPage.description
-            for (var i=0; i < data.aboutPage.editorsInChief.length; i++) document.querySelector('#editorsInChief').innerText += data.aboutPage.editorsInChief[i] + "\n";
-            for (var i=0; i < data.aboutPage.graphicsEditors.length; i++) document.querySelector('#graphicsEditors').innerText += data.aboutPage.graphicsEditors[i] + "\n";
-            for (var i=0; i < data.aboutPage.articleEditors.length; i++) document.querySelector('#articleEditors').innerText += data.aboutPage.articleEditors[i] + "\n";
-            for (var i=0; i < data.aboutPage.socialMediaCoordinators.length; i++) document.querySelector('#socialMediaCoordinators').innerText += data.aboutPage.socialMediaCoordinators[i] + "\n";
-            document.querySelector('#summary').innerText = data.mainPage.summary
+
+            for (var i=0; i < data.aboutPage.team[0].editorsInChief.length; i++) document.querySelector('#latestEditorsInChief').innerText += data.aboutPage.team[0].editorsInChief[i] + "\n";
+            for (var i=0; i < data.aboutPage.team[0].graphicsEditors.length; i++) document.querySelector('#latestGraphicsEditors').innerText += data.aboutPage.team[0].graphicsEditors[i] + "\n";
+            for (var i=0; i < data.aboutPage.team[0].articleEditors.length; i++) document.querySelector('#latestArticleEditors').innerText += data.aboutPage.team[0].articleEditors[i] + "\n";
+            for (var i=0; i < data.aboutPage.team[0].socialMediaCoordinators.length; i++) document.querySelector('#latestSocialMediaCoordinators').innerText += data.aboutPage.team[0].socialMediaCoordinators[i] + "\n";
+            
+            for (var j=1; j < data.aboutPage.team.length; j++)
+            {
+                console.log(j)
+                document.querySelector('#previousYears').innerText += data.aboutPage.team[j].year + "\n";
+                document.querySelector('#previousEditors').innerText += "EDITORS-IN-CHIEF" + "\n";
+                for (var i=0; i < data.aboutPage.team[j].editorsInChief.length; i++) document.querySelector('#previousEditors').innerText += data.aboutPage.team[j].editorsInChief[i] + "\n";
+                document.querySelector('#previousEditors').innerText += "GRAPHICS EDITORS" + "\n";
+                for (var i=0; i < data.aboutPage.team[j].graphicsEditors.length; i++) document.querySelector('#previousEditors').innerText += data.aboutPage.team[j].graphicsEditors[i] + "\n";
+                document.querySelector('#previousEditors').innerText += "ARTICLE EDITORS" + "\n";
+                for (var i=0; i < data.aboutPage.team[j].articleEditors.length; i++) document.querySelector('#previousEditors').innerText += data.aboutPage.team[j].articleEditors[i] + "\n";
+                document.querySelector('#previousEditors').innerText += "SOCIAL MEDIA COORDINATORS" + "\n";
+                for (var i=0; i < data.aboutPage.team[j].socialMediaCoordinators.length; i++) document.querySelector('#previousEditors').innerText += data.aboutPage.team[j].socialMediaCoordinators[i] + "\n";
+            }
+
         })
 </script>
 

@@ -2526,7 +2526,7 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 166px;
+    width: 250px;
     height: 42px;
     padding-bottom: 9px;
     float: none;
@@ -3552,7 +3552,7 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 166px;
+    width: 250px;
     height: 42px;
     margin-right: 26px;
     -webkit-box-pack: center;
@@ -4365,6 +4365,9 @@ a {
 }
 
 .shop-text.issue.right {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
     position: relative;
     display: inline-block;
     width: 31.6%;
@@ -9991,3 +9994,5 @@ html.w-mod-js *[data-ix="new-interaction"] {
         transition: none;
     }
 }
+
+
