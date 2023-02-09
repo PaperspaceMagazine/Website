@@ -2453,7 +2453,7 @@ a {
     z-index: 1000;
     display: block;
     padding: 0px;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif
     color: #191919;
     font-size: 22px;
     line-height: 29px;
@@ -2548,7 +2548,7 @@ a {
     border-width: 2px;
     border-color: #191919;
     background-color: transparent;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #191919;
     font-size: 22px;
     text-align: center;
@@ -2657,7 +2657,7 @@ a {
     -webkit-transform: translate(-50%, 0px);
     -ms-transform: translate(-50%, 0px);
     transform: translate(-50%, 0px);
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #191919;
     font-size: 22px;
     line-height: 27px;
@@ -2721,7 +2721,7 @@ a {
     overflow: hidden;
     width: 940px;
     margin-left: 0px;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .text-block.stories.left-lined {
@@ -2897,7 +2897,7 @@ a {
     border-style: none;
     border-bottom-width: 2px;
     border-bottom-color: #000;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #000;
     font-size: 22px;
     line-height: 27px;
@@ -3092,7 +3092,7 @@ a {
 }
 
 .p.about.aboutpodcast.framerframed {
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #fff;
     text-indent: 0px;
     white-space: normal;
@@ -3106,7 +3106,7 @@ a {
 
 .h3 {
     width: 100%;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #191919;
     font-size: 22px;
     font-weight: 400;
@@ -3565,7 +3565,7 @@ a {
     align-items: center;
     border: 2px solid #f6f6f6;
     background-color: transparent;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #f6f6f6;
     font-size: 22px;
     font-weight: 400;
@@ -4223,7 +4223,7 @@ a {
     border-bottom-width: 2px;
     border-bottom-color: #fff;
     background-color: transparent;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #fff;
     font-size: 16px;
 }
@@ -5148,7 +5148,7 @@ a {
     margin-top: 9px;
     margin-left: 18px;
     padding-left: 0px;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 18px;
 }
 
@@ -5988,7 +5988,7 @@ a {
     z-index: 1000;
     display: block;
     padding: 0px;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #fff;
     font-size: 22px;
     line-height: 29px;
@@ -6039,7 +6039,7 @@ a {
     z-index: 1000;
     display: block;
     padding: 0px;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #191919;
     font-size: 22px;
     line-height: 29px;
@@ -6333,7 +6333,7 @@ a {
     position: static;
     height: auto;
     opacity: 1;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #000;
     font-size: 22px;
     line-height: 27px;
@@ -6484,7 +6484,7 @@ a {
 .button-26.museleticon {
     height: auto;
     opacity: 1;
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #000;
     font-size: 22px;
     line-height: 27px;
@@ -6855,7 +6855,7 @@ a {
 }
 
 .paragraph-5 {
-    font-family: Macguffin03, sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #fff;
 }
 
@@ -9147,8 +9147,8 @@ html.w-mod-js *[data-ix="new-interaction"] {
 }
 
 @font-face {
-    font-family: 'Macguffin03';
-    src: url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917713caddc126_macguffin03.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91772843ddc125_macguffin03.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe9177b54fddc127_macguffin03.woff') format('woff'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917782eeddc12c_macguffin03.ttf') format('truetype');
+    font-family: 'Helvetica';
+    src: url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917713caddc126_Helvetica.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91772843ddc125_Helvetica.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe9177b54fddc127_Helvetica.woff') format('woff'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917782eeddc12c_Helvetica.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: auto;
