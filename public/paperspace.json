@@ -3,6 +3,11 @@
         "tabBanner": "Paperspace | Magazine",
         "summary": "Paperspace is a biannual magazine blah blah blah"
     },
+    "socials": {
+        "email": "magazine.paperspace@gmail.com",
+        "instagram": "https://www.instagram.com/paperspace.magazine/",
+        "issuu": "https://issuu.com/bathpaperspace"
+    },
     "aboutPage": {
         "description": "We are a student run magazine blah blah blah",
         "sponsorImage": "images/sponsors.png",
