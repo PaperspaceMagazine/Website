@@ -1,4 +1,6 @@
 .grid-container {
+    margin-top: 70px;
+    margin-bottom: 70px;  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -8,6 +10,19 @@
     text-align: center;
     margin: 10px;
   }
+
+.grid-container.previousEditors{
+  margin-top: 20px;
+  margin-bottom: 20px;  
+  display: flex;
+}
+.grid-item.previousEditors {
+  display: flex;
+  justify-content: flex-start;
+  width:40%;
+  margin: 10px;
+}
+
   img {
     width: 100%;
     height: auto;

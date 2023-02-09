@@ -4522,7 +4522,7 @@ a {
 }
 
 .title-issue.show.magazine.about-page {
-    display: block;
+    display: flex;
 }
 
 .title-issue.magazine {
@@ -5765,14 +5765,7 @@ a {
 }
 
 .stockists.divhidden {
-    display: block;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
+    display: flex;
 }
 
 .countries {

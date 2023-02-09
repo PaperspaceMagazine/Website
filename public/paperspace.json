@@ -78,6 +78,42 @@
                 "socialMediaCoordinators": [
                     "Frank Sinatra"
                 ]
+            },
+            {
+                "year": "2019",
+                "editorsInChief": [
+                    "Banter Shiryaeva",
+                    "B-Jay Harrington"
+                ],
+                "graphicsEditors": [
+                    "Bob Dylan",
+                    "Elon Musk"
+                ],
+                "articleEditors": [
+                    "Emo John",
+                    "Pink Floyd"
+                ],
+                "socialMediaCoordinators": [
+                    "Frank Sinatra"
+                ]
+            },
+            {
+                "year": "2018",
+                "editorsInChief": [
+                    "Banter Shiryaeva",
+                    "B-Jay Harrington"
+                ],
+                "graphicsEditors": [
+                    "Bob Dylan",
+                    "Elon Musk"
+                ],
+                "articleEditors": [
+                    "Emo John",
+                    "Pink Floyd"
+                ],
+                "socialMediaCoordinators": [
+                    "Frank Sinatra"
+                ]
             }
         ]
     },
