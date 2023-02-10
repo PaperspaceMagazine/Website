@@ -2887,6 +2887,7 @@ a {
 }
 
 .p {
+    font-family: "Myriad Pro", Myriad, sans-serif, Arial;
     display: block;
     width: 100%;
     height: auto;
@@ -3027,7 +3028,16 @@ a {
 }
 
 .p.detail.support {
+    font-size: 22px;
     margin-top: 25px;
+}
+
+@media screen and (max-width: 479px) 
+{
+    .p.detail.support {
+        font-size: 18px;
+    }
+
 }
 
 .p.bold {
@@ -3050,7 +3060,6 @@ a {
 
 .p.magazine {
     display: block;
-    text-align: center;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -4596,7 +4605,6 @@ a {
 }
 
 .div-info {
-    margin-top: 25px;
     border-top: 2px solid #000;
 }
 
