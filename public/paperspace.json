@@ -1,16 +1,37 @@
 {
     "mainPage": {
         "tabBanner": "Paperspace | Magazine",
-        "summary": "Paperspace is a biannual magazine blah blah blah text text text text text text text text texttext text text text text texttext text text text text text blah blah text text text text text text text text texttext text text text text texttext text text text text text blah blah text text text text text text text text texttext text text text text texttext text text text text text blah blah text text text text text text text text texttext text text text text texttext text text text text text blah blah text text text text text text text text texttext text text text text texttext text text text text text"
+        "summary": "Paperspace is a biannual magazine blah blah blah text text text text text <br> <br> text text text texttext text text text text texttext text text text text text blah blah text text text text text text text text texttext text text text text texttext text text text text text blah blah text text text text text text text text texttext text text text text texttext text text text text text blah blah text text text text text text text text texttext text text text text texttext text text text text text blah blah text text text text text text text text texttext text text text text texttext text text text text text"
     },
     "socials": {
         "email": "magazine.paperspace@gmail.com",
         "instagram": "https://www.instagram.com/paperspace.magazine/",
         "issuu": "https://issuu.com/bathpaperspace"
     },
+    "newsPage": {
+        "news": [
+            {
+                "date": "1st March 2001",
+                "url": "https://www.instagram.com/p/CnSBsRAs7Ve/",
+                "image": "images/news/news1.png",
+                "description": "Will you break more things? Break bigger things? Are you willing to break the thing that nobody wants you to break?”... “As it turns out, nobody wants you to break the system itself.” Fictional billionaire character Miles Bron of Glass Onion: A Knives Out Mystery (2022) discusses the idea of breaking systems and how his close group of friends are “disruptors” of the system. In the solving of a murder that occurs while the group are hosted by Miles Bron on his private island, the movie comments on current social systems using the characters’ differing social and wealth standings."
+            },
+            {
+                "date": "10th Novemeber 2001",
+                "url": "https://www.instagram.com/p/Cn7VPhGs0L_/",
+                "image": "images/news/news2.jpg",
+                "description": "PAPERSPACE PREVIEW Severance - graphic by Alex Whitwell, article by Jack Johnson. Jack’s article in the upcoming issue discusses the idea behind the project called The Line, a planned 170km long linear city in Saudi Arabia. While The Line aims to prioritise health and well-being for its future residents, the article discusses the systems at play and the impact it might have. <br> Be sure to look out for Jack’s article and Alex’s full graphic in Issue 19, Systems, coming soon." },
+            {
+                "date": "16th July 1969",
+                "url": "https://www.instagram.com/p/CkS9vSbsOVX/",
+                "image": "images/news/news3.png",
+                "description": "With the Issue 19 piece proposal deadline coming up soon, we wanted to share a resource aligning with our theme “Systems”. <br><br> Koyaanisqatsi is a non-narrative film exploring contemporary life in the United States. It consists of expansive shots of urban life and natural landscapes juxtaposed with an experimental score composed by Philip Glass. The film seeks to display modern life in a way different to that which we experience it; zooming out to display the systems and connections which govern our actions."
+            }
+        ]
+    },
     "aboutPage": {
         "description": "We are a student run magazine blah blah blah",
-        "sponsorImage": "images/sponsors.png",
+        "sponsorImage": "images/sponsorBanner/sponsors.png",
         "team": [
             {
                 "year": "2023",
@@ -137,39 +158,39 @@
     "latestMagazineCovers":
     [
         {
-            "coverImage": "images/issue18.png",
+            "coverImage": "images/magazineCovers/issue18.png",
             "url": "https://issuu.com/bathpaperspace/docs/221001_joyful_transgressions"
         },
         {
-            "coverImage": "images/issue17.png",
+            "coverImage": "images/magazineCovers/issue17.png",
             "url": "https://issuu.com/bathpaperspace/docs/220321_intimacy_"
         },
         {
-            "coverImage": "images/issue16.png",
+            "coverImage": "images/magazineCovers/issue16.png",
             "url": "https://issuu.com/bathpaperspace/docs/issuu_6"
         },
         {
-            "coverImage": "images/issue15.png",
+            "coverImage": "images/magazineCovers/issue15.png",
             "url": "https://issuu.com/bathpaperspace/docs/anarchy_paperspace_010221"
         },
         {
-            "coverImage": "images/issue18.png",
+            "coverImage": "images/magazineCovers/issue18.png",
             "url": "https://issuu.com/bathpaperspace/docs/221001_joyful_transgressions"
         },
         {
-            "coverImage": "images/issue17.png",
+            "coverImage": "images/magazineCovers/issue17.png",
             "url": "https://issuu.com/bathpaperspace/docs/220321_intimacy_"
         },
         {
-            "coverImage": "images/issue16.png",
+            "coverImage": "images/magazineCovers/issue16.png",
             "url": "https://issuu.com/bathpaperspace/docs/issuu_6"
         },
         {
-            "coverImage": "images/issue15.png",
+            "coverImage": "images/magazineCovers/issue15.png",
             "url": "https://issuu.com/bathpaperspace/docs/anarchy_paperspace_010221"
         },
         {
-            "coverImage": "images/issue15.png",
+            "coverImage": "images/magazineCovers/issue15.png",
             "url": "https://issuu.com/bathpaperspace/docs/anarchy_paperspace_010221"
         }
 

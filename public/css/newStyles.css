@@ -101,3 +101,20 @@ textarea {
 .container-3.w-container.summary {
   margin-top: 80px;
 }
+
+.border {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+  margin-bottom: 80px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.date {
+  font-size: 20px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: start;
+}
