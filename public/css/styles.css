@@ -4641,7 +4641,6 @@ a {
 .logo-support {
     width: 15%;
     height: 20%;
-    margin-right: 46px;
 }
 
 .logo-support.larger {
@@ -4663,7 +4662,6 @@ a {
 .logo-support.balk {
     width: 100%;
     height: auto;
-    margin-left: -43px;
 }
 
 .div-support {
@@ -8478,7 +8476,6 @@ html.w-mod-js *[data-ix="new-interaction"] {
 
     .logo-support.balk {
         margin-top: -25px;
-        margin-left: -12px;
     }
 
     .div-support {
