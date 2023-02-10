@@ -133,3 +133,15 @@ textarea {
 .myriad {
   font-family: "Myriad Pro", Myriad, sans-serif, Arial;
 }
+
+@media (max-width:991px) {
+  .whiteNavBar {
+    background-color: white;
+    position:fixed;
+    top:0;
+    width:100%;
+    height: 80px;
+    z-index:100;
+  }
+}
+
