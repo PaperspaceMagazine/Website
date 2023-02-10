@@ -147,10 +147,10 @@
                 data-easing2="ease" data-doc-height="1" role="banner"
                 class="menu navbar-4 navbar-5 navi podcastnav w-nav">
                 <nav role="navigation" class="nav-menu-2 w-nav-menu">
-                    <a href="index.html" class="nav_link home w-nav-link">Paperspace</a>
-                    <a href="#donate" class="nav_link w-nav-link">Donate</a>
-                    <a href="news.html" class="nav_link w-nav-link">News</a>
-                    <a href="about.html" class="nav_link w-nav-link">About</a>
+                    <a href="index.html" class="nav_link home w-nav-link helveticaNeue">Paperspace</a>
+                    <a href="#donate" class="nav_link w-nav-link helveticaNeue">Donate</a>
+                    <a href="news.html" class="nav_link w-nav-link helveticaNeue">News</a>
+                    <a href="about.html" class="nav_link w-nav-link helveticaNeue">About</a>
                 </nav>
                 <div class="menu-button-2-podcast w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
                     role="button" tabindex="0" aria-controls="w-nav-overlay-2" aria-haspopup="menu"
@@ -161,15 +161,15 @@
             </div>
         </div>
         <div class="buy-button" style="width:100px">
-            <a target="_blank" class="button w-button" id="latestIssueIssuu">VIEW LATEST ISSUE</a></div>
+            <a target="_blank" class="button w-button myriad" id="latestIssueIssuu">VIEW LATEST ISSUE</a></div>
         <div class="header_issue">
-            <div class="text-block homepage" id="latestIssueTitle"></div>
+            <div class="text-block homepage myriad" id="latestIssueTitle"></div>
         </div>
     </div>
 
     <body class="body">
         <div class="content wf-section">
-            <div class="container-3 w-container summary">
+            <div class="container-3 w-container summary myriad">
                 <p class="p" id="summary"></p>
             </div>
             <div class="container-3 w-container">
@@ -246,24 +246,24 @@
 
     <div class="footer wf-section" id="donate">
         <div class="container-2 w-container contactUs">
-            <div class="p white contactText">CONTACT US<br> Currently accepting donations</div>
+            <div class="p white contactText myriad">CONTACT US<br> Currently accepting donations</div>
         </div>
         <div class="container-2 w-container contact">
             <div class="form-container">
                 <form action="#">
-                  <div class="form-group">
-                    <label class="nameForm" for="name">Name:</label>
+                  <div class="form-group myriad">
+                    <label class="nameForm" for="name" style="font-weight: normal;">Name:</label>
                     <input type="text" id="name" required />
                   </div>
-                  <div class="form-group">
-                    <label for="email">Email:</label>
+                  <div class="form-group myriad">
+                    <label for="email" style="font-weight: normal;">Email:</label>
                     <input type="email" id="email" required />
                   </div>
-                  <div class="form-group">
-                    <label for="message">Message:</label>
+                  <div class="form-group myriad">
+                    <label for="message" style="font-weight: normal;">Message:</label>
                     <textarea id="message" required></textarea>
                   </div>
-                  <button class="rectangular-button">SUBMIT</button>
+                  <button class="rectangular-button myriad">SUBMIT</button>
                 </form>
               </div>
         </div>
@@ -340,7 +340,7 @@
             .then(data => {
                 console.log(data)
                 document.querySelector('#tabBanner').innerText = data.mainPage.tabBanner
-                document.querySelector('#summary').innerText = data.mainPage.summary
+                document.querySelector('#summary').innerHTML = data.mainPage.summary
                 document.querySelector('#latestIssueTitle').innerText = data.issues[0].title
                 document.querySelector('#latestIssueIssuu').setAttribute("href", data.latestMagazineCovers[0].url)
                 document.querySelector('#email').innerText = data.socials.email
