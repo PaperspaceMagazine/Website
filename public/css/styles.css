@@ -2260,6 +2260,10 @@ textarea.w-select {
     .w-nav[data-collapse="medium"] .w-nav-button {
         display: block
     }
+
+    .button.w-button.myriad {
+        display: none;
+    }
 }
 
 @media screen and (max-width:767px) {
