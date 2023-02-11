@@ -150,7 +150,6 @@
     <script>
         $(function () {
             if ($(".sticky")[0]) {
-                console.log("sticky");
                 var stickyOffset = $('.sticky').offset().top;
 
                 $(window).scroll(function () {
@@ -188,8 +187,7 @@
     fetch('paperspace.json')
         .then(response => response.json())
         .then(data => {
-            console.log(data)
-
+            
             document.querySelector('#tabBanner').innerText = data.mainPage.tabBanner
             
             var newsHTML = ""

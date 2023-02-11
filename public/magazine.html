@@ -130,7 +130,6 @@
   fetch('paperspace.json')
       .then(response => response.json())
       .then(data => {
-          console.log(data)
 
           var img0 = new Image();
           img0.src = data.latestMagazineCovers[0].coverImage;
