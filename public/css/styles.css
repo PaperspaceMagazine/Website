@@ -2761,7 +2761,7 @@ a {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-family: Macguffin02, sans-serif;
+    font-family: paperspace02, sans-serif;
     color: #191919;
     font-size: 32px;
     line-height: 35px;
@@ -2794,7 +2794,7 @@ a {
     border-bottom: 2px solid #000;
 }
 
-.h2.spacing.more-macguffin {
+.h2.spacing.more-paperspace {
     width: 940px;
 }
 
@@ -2824,7 +2824,7 @@ a {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    font-family: Macguffin02, sans-serif;
+    font-family: paperspace02, sans-serif;
     color: #191919;
     font-size: 32px;
     line-height: 35px;
@@ -2856,7 +2856,7 @@ a {
 .p1.full.sidebar-text {
     width: 940px;
     margin-left: 5vw;
-    font-family: Macguffin02, sans-serif;
+    font-family: paperspace02, sans-serif;
     text-align: left;
 }
 
@@ -2867,7 +2867,7 @@ a {
     text-align: center;
 }
 
-.p1.center.more-macguffins-home-page {
+.p1.center.more-paperspaces-home-page {
     padding-right: 8%;
     letter-spacing: 0px;
     text-transform: uppercase;
@@ -2882,7 +2882,7 @@ a {
 }
 
 .p1.ful.sidebar-text {
-    font-family: Macguffin02, sans-serif;
+    font-family: paperspace02, sans-serif;
 }
 
 .p1.moblile-set.bottom-space {
@@ -3265,7 +3265,7 @@ a {
     margin-bottom: 25px;
     padding-right: 43px;
     padding-left: 0px;
-    font-family: Macguffin02, sans-serif;
+    font-family: paperspace02, sans-serif;
     color: #191919;
     font-size: 18px;
     line-height: 23px;
@@ -3634,7 +3634,7 @@ a {
     background-color: #fff;
 }
 
-.body.moremacguffins {
+.body.morepaperspaces {
     background-color: #f6f6f6;
 }
 
@@ -3844,7 +3844,7 @@ a {
 .h1 {
     margin-top: 49px;
     margin-bottom: 0px;
-    font-family: Macguffin02, sans-serif;
+    font-family: paperspace02, sans-serif;
     color: #191919;
     font-size: 60px;
     line-height: 65px;
@@ -3855,7 +3855,7 @@ a {
 .h1.sidebar-text {
     width: 940px;
     margin-left: 5vw;
-    font-family: Macguffin02, sans-serif;
+    font-family: paperspace02, sans-serif;
     text-align: center;
 }
 
@@ -3876,11 +3876,11 @@ a {
     text-align: right;
 }
 
-.story.topborder.left.sidebar-text.more-macguffin {
+.story.topborder.left.sidebar-text.more-paperspace {
     margin-left: 60px;
 }
 
-.story.topborder.left.sidebar-text.morce-macguffin {
+.story.topborder.left.sidebar-text.morce-paperspace {
     width: 940px;
     margin-left: 50px;
 }
@@ -3890,7 +3890,7 @@ a {
     margin-top: 27px;
     margin-bottom: 36px;
     margin-left: 10%;
-    font-family: Macguffin02, sans-serif;
+    font-family: paperspace02, sans-serif;
     color: #191919;
     font-size: 18px;
     line-height: 23px;
@@ -3951,7 +3951,7 @@ a {
 .p2 {
     display: inline-block;
     margin-top: 0px;
-    font-family: Macguffin02, sans-serif;
+    font-family: paperspace02, sans-serif;
     color: #191919;
     font-size: 22px;
     line-height: 27px;
@@ -4115,18 +4115,18 @@ a {
     mix-blend-mode: darken;
 }
 
-.img-stories.moremacguffins {
+.img-stories.morepaperspaces {
     width: 60%;
     margin-top: 20px;
     margin-left: 20%;
 }
 
-.img-stories.moremacguffins._2 {
+.img-stories.morepaperspaces._2 {
     width: 70%;
     margin-left: 15%;
 }
 
-.img-stories.moremacguffins.small {
+.img-stories.morepaperspaces.small {
     width: 60%;
     margin-left: 17%;
 }
@@ -4983,7 +4983,7 @@ a {
     font-size: 22px;
 }
 
-.macguffin {
+.paperspace {
     position: fixed;
     display: none;
     margin-top: 50px;
@@ -5438,7 +5438,7 @@ a {
     border-style: none;
     border-width: 1px;
     border-color: #191919;
-    font-family: Macguffin00, sans-serif;
+    font-family: paperspace00, sans-serif;
     color: #191919;
     text-align: left;
     text-decoration: none;
@@ -5475,7 +5475,7 @@ a {
     right: 0vw;
 }
 
-.sidebar-text-wrapper.intro.more-macguffins-sidebar {
+.sidebar-text-wrapper.intro.more-paperspaces-sidebar {
     position: fixed;
 }
 
@@ -5535,7 +5535,7 @@ a {
     background-color: #c8effc;
 }
 
-.sidebar-left.more-macguffins {
+.sidebar-left.more-paperspaces {
     display: block;
     background-color: #f6f6f6;
 }
@@ -7498,7 +7498,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
         background-color: transparent;
     }
 
-    .macguffin {
+    .paperspace {
         position: fixed;
         display: block;
         margin-top: 25px;
@@ -7577,7 +7577,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
         display: none;
     }
 
-    .sidebar-left.more-macguffins {
+    .sidebar-left.more-paperspaces {
         display: none;
     }
 
@@ -7837,7 +7837,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
         margin-top: 0%;
     }
 
-    .macguffin {
+    .paperspace {
         margin-left: 20px;
     }
 
@@ -8314,12 +8314,12 @@ html.w-mod-js *[data-ix="new-interaction"] {
         margin-top: 40px;
     }
 
-    .img-stories.moremacguffins {
+    .img-stories.morepaperspaces {
         width: 90%;
         margin-left: 5%;
     }
 
-    .img-stories.moremacguffins.small {
+    .img-stories.morepaperspaces.small {
         width: 90%;
         margin-left: 5%;
     }
@@ -9130,24 +9130,24 @@ html.w-mod-js *[data-ix="new-interaction"] {
 }
 
 @font-face {
-    font-family: 'Macguffin00';
-    src: url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917713b0ddc11d_macguffin00.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe9177859fddc12a_macguffin00.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe9177fe25ddc121_macguffin00.woff') format('woff'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917759c4ddc128_macguffin00.ttf') format('truetype');
+    font-family: 'paperspace00';
+    src: url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917713b0ddc11d_paperspace00.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe9177859fddc12a_paperspace00.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe9177fe25ddc121_paperspace00.woff') format('woff'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917759c4ddc128_paperspace00.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: auto;
 }
 
 @font-face {
-    font-family: 'Macguffin01';
-    src: url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917775e8ddc120_macguffin01.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91774c0fddc11e_macguffin01.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91773e30ddc11f_macguffin01.woff') format('woff'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91774d0bddc129_macguffin01.ttf') format('truetype');
+    font-family: 'paperspace01';
+    src: url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917775e8ddc120_paperspace01.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91774c0fddc11e_paperspace01.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91773e30ddc11f_paperspace01.woff') format('woff'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91774d0bddc129_paperspace01.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: auto;
 }
 
 @font-face {
-    font-family: 'Macguffin02';
-    src: url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917720c5ddc124_macguffin02.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917763b5ddc123_macguffin02.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91771d81ddc122_macguffin02.woff') format('woff'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91777ad8ddc12b_macguffin02.ttf') format('truetype');
+    font-family: 'paperspace02';
+    src: url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917720c5ddc124_paperspace02.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917763b5ddc123_paperspace02.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91771d81ddc122_paperspace02.woff') format('woff'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91777ad8ddc12b_paperspace02.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: auto;
