@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html data-wf-domain="www.paperspacemagazine.com" data-wf-page="632ad4bbd8de6c8ecad30ebf"
     data-wf-site="5ae19b06fe9177ae73ddc117" class=" w-mod-js w-mod-ix hiexiahpq idc0_345">
 
@@ -357,7 +358,7 @@
             .then(data => {
                 document.querySelector('#tabBanner').innerText = data.mainPage.tabBanner
                 document.querySelector('#summary').innerHTML = data.mainPage.summary
-                document.querySelector('#latestIssueTitle').innerText = data.issues[0].title
+                document.querySelector('#latestIssueTitle').innerText = data.latestIssue.title
                 document.querySelector('#latestIssueIssuu').setAttribute("href", data.latestMagazineCovers[0].url)
                 document.querySelector('#instagram').setAttribute("href", data.socials.instagram)
                 document.querySelector('#issuu').setAttribute("href", data.socials.issuu)
