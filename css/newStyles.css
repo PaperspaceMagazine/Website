@@ -125,11 +125,6 @@ textarea {
   justify-content: start;
 }
 
-
-.helveticaNeue  {
-  font-family: Helvetica, 'Helvetica Neue', sans-serif, Arial;
-}
-
 .myriad {
   font-family: "Myriad Pro", Myriad, sans-serif, Arial;
 }
@@ -161,3 +156,8 @@ textarea {
   margin-bottom: 10px;
 }
 
+.moreIssuesBtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}

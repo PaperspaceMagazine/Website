@@ -79,7 +79,7 @@ body {
    ========================================================================== */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif, Arial;
+    font-family: sans-serif, Arial;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -1687,7 +1687,7 @@ textarea.w-select {
     bottom: 0;
     left: 0;
     color: #fff;
-    font-family: "Helvetica Neue", Helvetica, Ubuntu, "Segoe UI", Verdana, sans-serif;
+    font-family: Ubuntu, "Segoe UI", Verdana, sans-serif;
     font-size: 17px;
     line-height: 1.2;
     font-weight: 300;
@@ -2261,7 +2261,7 @@ textarea.w-select {
         display: block
     }
 
-    .button.w-button.myriad {
+    .button.w-button.hide.myriad {
         display: none;
     }
 }
@@ -2404,7 +2404,7 @@ textarea.w-select {
 }
 
 body {
-    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-family: sans-serif;
     color: #333;
     font-size: 14px;
     line-height: 20px;
@@ -4678,8 +4678,8 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 150px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .div-support.divhidden.firstsupportdiv {
@@ -8488,7 +8488,6 @@ html.w-mod-js *[data-ix="new-interaction"] {
     }
 
     .div-support {
-        margin: 10px 0px 50px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
@@ -9153,14 +9152,6 @@ html.w-mod-js *[data-ix="new-interaction"] {
     font-display: auto;
 }
 
-@font-face {
-    font-family: 'Helvetica';
-    src: url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917713caddc126_Helvetica.woff2') format('woff2'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe91772843ddc125_Helvetica.eot') format('embedded-opentype'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe9177b54fddc127_Helvetica.woff') format('woff'), url('https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/5ae19b06fe917782eeddc12c_Helvetica.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: auto;
-}
-
 
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -9617,7 +9608,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
 @media (-moz-platform: macos) {
     .positionDurationBox {
         font-size-adjust: unset;
-        font-family: "Helvetica Neue", "Helvetica", sans-serif;
+        font-family: sans-serif;
     }
 }
 
