@@ -161,3 +161,17 @@ textarea {
   justify-content: center;
   margin-bottom: 70px;
 }
+
+.videoContainer 
+{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.videoContainer video 
+{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
