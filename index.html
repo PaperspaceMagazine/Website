@@ -191,7 +191,7 @@
                 <p class="p" id="summary"></p>
             </div>
             <div class="container-3 w-container">
-                <div class="grid-container" style="padding-top:0px">
+                <div class="grid-container" style="padding-top: 0px">
                     <div class="grid-item"><a target="_blank" id="magazine0"></a></div>
                     <div class="grid-item"><a target="_blank" id="magazine1"></a></div>
                     <div class="grid-item"><a target="_blank" id="magazine2"></a></div>
@@ -202,63 +202,74 @@
                     <div class="grid-item"><a target="_blank" id="magazine7"></a></div>
                     <div class="grid-item"><a target="_blank" id="magazine8"></a></div>
                 </div>
+                <button id="moreButton" onclick="showMoreIssues()">More issues</button>
             </div>
         </div>
     </body>
-
+    
     <script>
+        let latestMagazineCovers = [];
+        let currentIndex = 9;
+    
+        function showMoreIssues() {
+            const gridContainer = document.querySelector(".grid-container");
+            const moreButton = document.getElementById("moreButton");
+    
+            // Check if there are more issues to display
+            if (currentIndex < latestMagazineCovers.length) {
+                const endIndex = latestMagazineCovers.length;
+    
+                for (let i = currentIndex; i < endIndex; i++) {
+                    const img = new Image();
+                    img.src = latestMagazineCovers[i].coverImage;
+    
+                    const link = document.createElement("a");
+                    link.href = latestMagazineCovers[i].url;
+                    link.target = "_blank";
+                    link.appendChild(img);
+    
+                    const gridItem = document.createElement("div");
+                    gridItem.classList.add("grid-item");
+                    gridItem.appendChild(link);
+    
+                    gridContainer.appendChild(gridItem);
+                }
+    
+                currentIndex = endIndex;
+    
+                // Hide the "More issues" button if all issues have been displayed
+                if (currentIndex >= latestMagazineCovers.length) {
+                    moreButton.style.display = "none";
+                }
+            }
+        }
+    
         fetch('paperspace.json')
             .then(response => response.json())
             .then(data => {
-                var img0 = new Image();
-                img0.src = data.latestMagazineCovers[0].coverImage;
-                document.getElementById('magazine0').appendChild(img0);
-                document.getElementById('magazine0').setAttribute("href", data.latestMagazineCovers[0].url)
-
-
-                var img1 = new Image();
-                img1.src = data.latestMagazineCovers[1].coverImage;
-                document.getElementById('magazine1').appendChild(img1);
-                document.getElementById('magazine1').appendChild(img1);
-                document.getElementById('magazine1').setAttribute("href", data.latestMagazineCovers[1].url)
-
-                var img2 = new Image();
-                img2.src = data.latestMagazineCovers[2].coverImage;
-                document.getElementById('magazine2').appendChild(img2)
-                document.getElementById('magazine2').setAttribute("href", data.latestMagazineCovers[2].url)
-
-                var img3 = new Image();
-                img3.src = data.latestMagazineCovers[3].coverImage;
-                document.getElementById('magazine3').appendChild(img3)
-                document.getElementById('magazine3').setAttribute("href", data.latestMagazineCovers[3].url)
-
-                var img4 = new Image();
-                img4.src = data.latestMagazineCovers[4].coverImage;
-                document.getElementById('magazine4').appendChild(img4)
-                document.getElementById('magazine4').setAttribute("href", data.latestMagazineCovers[4].url)
-
-                var img5 = new Image();
-                img5.src = data.latestMagazineCovers[5].coverImage;
-                document.getElementById('magazine5').appendChild(img5)
-                document.getElementById('magazine5').setAttribute("href", data.latestMagazineCovers[5].url)
-
-                var img6 = new Image();
-                img6.src = data.latestMagazineCovers[6].coverImage;
-                document.getElementById('magazine6').appendChild(img6)
-                document.getElementById('magazine6').setAttribute("href", data.latestMagazineCovers[6].url)
-
-                var img7 = new Image();
-                img7.src = data.latestMagazineCovers[7].coverImage;
-                document.getElementById('magazine7').appendChild(img7)
-                document.getElementById('magazine7').setAttribute("href", data.latestMagazineCovers[7].url)
-
-                var img8 = new Image();
-                img8.src = data.latestMagazineCovers[8].coverImage;
-                document.getElementById('magazine8').appendChild(img8)
-                document.getElementById('magazine8').setAttribute("href", data.latestMagazineCovers[8].url)
-
-            })
+                latestMagazineCovers = data.latestMagazineCovers;
+    
+                for (let i = 0; i < 9 && i < latestMagazineCovers.length; i++) {
+                    const img = new Image();
+                    img.src = latestMagazineCovers[i].coverImage;
+    
+                    const link = document.createElement("a");
+                    link.href = latestMagazineCovers[i].url;
+                    link.target = "_blank";
+                    link.appendChild(img);
+    
+                    const gridItem = document.getElementById(`magazine${i}`);
+                    gridItem.appendChild(link);
+                }
+    
+                // Hide the "More issues" button if all issues have been displayed initially
+                if (latestMagazineCovers.length <= 9) {
+                    const moreButton = document.getElementById("moreButton");
+                    moreButton.style.display = "none";
+                }
+            });
     </script>
+    
 
     <div class="footer wf-section" id="donate">
         <div class="container-2 w-container contactUs">
