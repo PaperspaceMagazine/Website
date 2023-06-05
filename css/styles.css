@@ -996,7 +996,7 @@ textarea.w-select {
     display: none !important
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:1559px) {
     .w-container {
         max-width: 728px
     }
@@ -2252,7 +2252,7 @@ textarea.w-select {
     position: static
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:1559px) {
     .w-nav[data-collapse="medium"] .w-nav-menu {
         display: none
     }
@@ -6884,7 +6884,7 @@ html.w-mod-js *[data-ix="new-interaction"] {
     display: none;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1559px) {
     .background-video {
         margin-top: 0px;
     }
