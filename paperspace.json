@@ -30,7 +30,7 @@
         ]
     },
     "aboutPage": {
-        "description": "We are a student run magazine blah blah blah",
+        "description": "Paperspace is a student-led independent design magazine. Initially formed by Architecture and Civil Engineering students from the University of Bath, it has grown to include work from a range of different fields and features a unique blend of mixed media contributions from students and professionals. <br><br> We are proud of the space we have created, where all are welcome to express their thoughts, opinions and ideas about the world around us. <br><br> As a supportive, collaborative communtity, we always welcome new participants and their unique perspective. If this is a space you would like to join please contact us. <br><br> Thank you to all of the donors that help the magazine reach its full potential.",
         "sponsorImage": "images/sponsorBanner/sponsors.png",
         "team": [
             {
@@ -39,106 +39,52 @@
                     "Daria Shiryaeva",
                     "Jesper-Jay Harrington"
                 ],
-                "graphicsEditors": [
-                    "Bob Dylan",
-                    "Elon Musk"
+                "contentEditors": [
+                    "Nikita Finch", 
+                    "Tara Hodges", 
+                    "Rishita Ahmed"
                 ],
-                "articleEditors": [
-                    "Elton John",
-                    "Pink Floyd"
+                "graphicalEditors": [
+                    "Anushka Gupta",
+                    "Alexander Whitwell" 
                 ],
                 "socialMediaCoordinators": [
-                    "Frank Sinatra"
+                    "Kathryn Lee"
                 ]
             },
             {
-                "year": "2022",
+                "year": "2021-2022",
                 "editorsInChief": [
-                    "Bob Shiryaeva",
-                    "Bob-Jay Harrington"
-                ],
-                "graphicsEditors": [
-                    "Bob Dylan",
-                    "Elon Musk"
-                ],
-                "articleEditors": [
-                    "Elton John",
-                    "Pink Floyd"
-                ],
-                "socialMediaCoordinators": [
-                    "Frank Sinatra"
+                    "Jamie Ferguson",
+                    "Bethany Kippin"
                 ]
             },
             {
-                "year": "2021",
+                "year": "2020-2021",
                 "editorsInChief": [
-                    "James Shiryaeva",
-                    "B-Jay Harrington"
-                ],
-                "graphicsEditors": [
-                    "Bob Dylan",
-                    "Elon Musk"
-                ],
-                "articleEditors": [
-                    "Elton John",
-                    "Pink Floyd"
-                ],
-                "socialMediaCoordinators": [
-                    "Frank Sinatra"
+                    "Amy Young"
                 ]
             },
             {
-                "year": "2020",
+                "year": "2019-2020",
                 "editorsInChief": [
-                    "Banter Shiryaeva",
-                    "B-Jay Harrington"
-                ],
-                "graphicsEditors": [
-                    "Bob Dylan",
-                    "Elon Musk"
-                ],
-                "articleEditors": [
-                    "Emo John",
-                    "Pink Floyd"
-                ],
-                "socialMediaCoordinators": [
-                    "Frank Sinatra"
+                    "Julia Korpacka",
+                    "Michael Tsang"
                 ]
             },
             {
-                "year": "2019",
+                "year": "2018-2019",
                 "editorsInChief": [
-                    "Banter Shiryaeva",
-                    "B-Jay Harrington"
-                ],
-                "graphicsEditors": [
-                    "Bob Dylan",
-                    "Elon Musk"
-                ],
-                "articleEditors": [
-                    "Emo John",
-                    "Pink Floyd"
-                ],
-                "socialMediaCoordinators": [
-                    "Frank Sinatra"
+                    "Oliwia Jackowska",
+                    "Sebastian Stripp",
+                    "Amy Young"
                 ]
             },
             {
-                "year": "2018",
+                "year": "2017-2018",
                 "editorsInChief": [
-                    "Banter Shiryaeva",
-                    "B-Jay Harrington"
-                ],
-                "graphicsEditors": [
-                    "Bob Dylan",
-                    "Elon Musk"
-                ],
-                "articleEditors": [
-                    "Emo John",
-                    "Pink Floyd"
-                ],
-                "socialMediaCoordinators": [
-                    "Frank Sinatra"
+                    "Diannnnna Smiljkovic",
+                    "Olivia Harrison"
                 ]
             }
         ]
@@ -183,7 +129,7 @@
         {
             "coverImage": "images/magazineCovers/issue10.png",
             "url": "issues/10 Stranger.pdf"
-        }
+        },
         {
             "coverImage": "images/magazineCovers/issue9.png",
             "url": "issues/9 Translation.pdf"

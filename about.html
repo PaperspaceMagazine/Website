@@ -125,10 +125,10 @@
             data-easing2="ease" data-doc-height="1" role="banner"
             class="menu navbar-4 navbar-5 navi podcastnav w-nav">
             <nav role="navigation" class="nav-menu-2 w-nav-menu">
-                <a href="index.html" class="nav_link home w-nav-link helveticaNeue">Paperspace</a>
-                <a href="#donate" class="nav_link w-nav-link helveticaNeue">Donate</a>
-                <a href="news.html" class="nav_link w-nav-link helveticaNeue">News</a>
-                <a href="about.html" class="nav_link w-nav-link helveticaNeue">About</a>
+                <a href="index.html" class="nav_link home w-nav-link">Paperspace</a>
+                <a href="#donate" class="nav_link w-nav-link">Donate</a>
+                <a href="news.html" class="nav_link w-nav-link">News</a>
+                <a href="about.html" class="nav_link w-nav-link">About</a>
             </nav>
             <div class="menu-button-2-podcast w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
                 role="button" tabindex="0" aria-controls="w-nav-overlay-1" aria-haspopup="menu"
@@ -141,10 +141,10 @@
             data-easing2="ease" data-doc-height="1" role="banner"
             class="menu navbar-4 navbar-5 navi podcastnav w-nav">
             <nav role="navigation" class="nav-menu-2 w-nav-menu">
-                <a href="index.html" class="nav_link home w-nav-link helveticaNeue">Paperspace</a>
-                <a href="#donate" class="nav_link w-nav-link helveticaNeue">Donate</a>
-                <a href="news.html" class="nav_link w-nav-link helveticaNeue">News</a>
-                <a href="about.html" class="nav_link w-nav-link helveticaNeue">About</a>
+                <a href="index.html" class="nav_link home w-nav-link">Paperspace</a>
+                <a href="#donate" class="nav_link w-nav-link">Donate</a>
+                <a href="news.html" class="nav_link w-nav-link">News</a>
+                <a href="about.html" class="nav_link w-nav-link">About</a>
             </nav>
             <div class="menu-button-2-podcast w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
                 role="button" tabindex="0" aria-controls="w-nav-overlay-2" aria-haspopup="menu"
@@ -163,8 +163,8 @@
                     <h1 class="text-block stories nodisplay">ABOUT PAPERSPACE</h1>
                     <h1 class="p about" style="margin-top:50px" id="aboutPageDescription"></h1>
                     <div class="p" id="editorsInChief0">EDITORS-IN-CHIEF <br></div>
-                    <div class="p" id="graphicsEditors0">GRAPHICS&nbsp;EDITORS <br></div>
-                    <div class="p" id="articleEditors0">ARTICLE&nbsp;EDITORS <br></div>
+                    <div class="p" id="contentEditors0">CONTENT&nbsp;EDITORS <br></div>
+                    <div class="p" id="graphicalEditors0">GRAPHICAL&nbsp;EDITORS <br></div>
                     <div class="p" id="socialMediaCoordinators0">SOCIAL&nbsp;MEDIA&nbsp;COORDINATOR <br></div>
                     <div class="p"><a href="http://www.willpowell.uk" target="_blank"
                             class="textlink">WEBSITE<br>Will Powell</a></div>
@@ -281,8 +281,8 @@
             document.querySelector('#aboutPageDescription').innerHTML = data.aboutPage.description
 
             for (var i=0; i < data.aboutPage.team[0].editorsInChief.length; i++) document.querySelector('#editorsInChief0').innerText += data.aboutPage.team[0].editorsInChief[i] + "\n";
-            for (var i=0; i < data.aboutPage.team[0].graphicsEditors.length; i++) document.querySelector('#graphicsEditors0').innerText += data.aboutPage.team[0].graphicsEditors[i] + "\n";
-            for (var i=0; i < data.aboutPage.team[0].articleEditors.length; i++) document.querySelector('#articleEditors0').innerText += data.aboutPage.team[0].articleEditors[i] + "\n";
+            for (var i=0; i < data.aboutPage.team[0].contentEditors.length; i++) document.querySelector('#contentEditors0').innerText += data.aboutPage.team[0].contentEditors[i] + "\n";
+            for (var i=0; i < data.aboutPage.team[0].graphicalEditors.length; i++) document.querySelector('#graphicalEditors0').innerText += data.aboutPage.team[0].graphicalEditors[i] + "\n";
             for (var i=0; i < data.aboutPage.team[0].socialMediaCoordinators.length; i++) document.querySelector('#socialMediaCoordinators0').innerText += data.aboutPage.team[0].socialMediaCoordinators[i] + "\n";
 
             var editor1 = "EDITORS-IN-CHIEF <br>";
