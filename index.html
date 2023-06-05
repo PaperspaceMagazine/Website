@@ -133,8 +133,8 @@
             <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
         </div>
         <div class="videoContainer">
-            <video autoplay loop muted>
-                <source src="videos/paperspaceLandscape.mp4">
+            <video autoplay loop muted id="backgroundVideo">
+                <source id="videoSource" src="" type="video/mp4">
             </video>
             <div class="mobilePaperspace" style="width:100px">
                 <a href="index.html" aria-current="page" class="nav_link home">Paperspace</a>
@@ -247,6 +247,23 @@
                     moreIssuesBtn.style.display = "none";
                 }
             });
+    </script>
+
+    <script>
+        var videoContainer = document.querySelector('.videoContainer');
+        var videoElement = document.getElementById('backgroundVideo');
+        var videoSource = document.getElementById('videoSource');
+        
+        var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var deviceHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        
+        if (deviceWidth > deviceHeight) {
+            videoSource.src = 'videos/paperspaceLandscape.mp4';
+        } else {
+            videoSource.src = 'videos/paperspacePortrait.mp4';
+        }
+        
+        videoElement.load();
     </script>
     
 
