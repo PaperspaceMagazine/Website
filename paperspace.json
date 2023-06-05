@@ -173,17 +173,52 @@
             "url": "issues/13 20XX.pdf"
         },
         {
-            "coverImage": "images/magazineCovers/issue13.png",
+            "coverImage": "images/magazineCovers/issue12.png",
             "url": "issues/12 Childhood.pdf"
         },
         {
-            "coverImage": "images/magazineCovers/issue12.png",
+            "coverImage": "images/magazineCovers/issue11.png",
             "url": "issues/11 Union.pdf"
         },
         {
-            "coverImage": "images/magazineCovers/issue11.png",
+            "coverImage": "images/magazineCovers/issue10.png",
             "url": "issues/10 Stranger.pdf"
         }
-
+        {
+            "coverImage": "images/magazineCovers/issue9.png",
+            "url": "issues/9 Translation.pdf"
+        },
+        {
+            "coverImage": "images/magazineCovers/issue8.png",
+            "url": "issues/8 Truths.pdf"
+        },
+        {
+            "coverImage": "images/magazineCovers/issue7.png",
+            "url": "issues/7.pdf"
+        },
+        {
+            "coverImage": "images/magazineCovers/issue6.png",
+            "url": "issues/6 Origin.pdf"
+        },
+        {
+            "coverImage": "images/magazineCovers/issue5.png",
+            "url": "issues/5 Boundaries.pdf"
+        },
+        {
+            "coverImage": "images/magazineCovers/issue4.png",
+            "url": "issues/4 Senses.pdf"
+        },
+        {
+            "coverImage": "images/magazineCovers/issue3.png",
+            "url": "issues/3 Revolution.pdf"
+        },
+        {
+            "coverImage": "images/magazineCovers/issue2.png",
+            "url": "issues/2 Alien.pdf"
+        },
+        {
+            "coverImage": "images/magazineCovers/issue1.png",
+            "url": "issues/1 Beginnings.pdf"
+        }
     ]
 }
