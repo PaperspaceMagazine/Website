@@ -210,3 +210,17 @@ textarea {
 .whiteBlock {
   background-color: white;
 }
+
+.instagramSection {
+  padding-top: 100px;
+  padding-left: 300;
+  padding-right: 300;
+}
+
+@media (max-width:1559px) {
+.instagramSection {
+  padding-top: 75px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+}
