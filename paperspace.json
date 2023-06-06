@@ -8,27 +8,6 @@
         "instagram": "https://www.instagram.com/paperspace.magazine/",
         "issuu": "https://issuu.com/bathpaperspace"
     },
-    "newsPage": {
-        "news": [
-            {
-                "date": "1st March 2001",
-                "url": "https://www.instagram.com/p/CnSBsRAs7Ve/",
-                "image": "images/news/news1.png",
-                "description": "Will you break more things? Break bigger things? Are you willing to break the thing that nobody wants you to break?”... “As it turns out, nobody wants you to break the system itself.” Fictional billionaire character Miles Bron of Glass Onion: A Knives Out Mystery (2022) discusses the idea of breaking systems and how his close group of friends are “disruptors” of the system. In the solving of a murder that occurs while the group are hosted by Miles Bron on his private island, the movie comments on current social systems using the characters’ differing social and wealth standings."
-            },
-            {
-                "date": "10th Novemeber 2001",
-                "url": "https://www.instagram.com/p/Cn7VPhGs0L_/",
-                "image": "images/news/news2.jpg",
-                "description": "PAPERSPACE PREVIEW Severance - graphic by Alex Whitwell, article by Jack Johnson. Jack’s article in the upcoming issue discusses the idea behind the project called The Line, a planned 170km long linear city in Saudi Arabia. While The Line aims to prioritise health and well-being for its future residents, the article discusses the systems at play and the impact it might have. <br> Be sure to look out for Jack’s article and Alex’s full graphic in Issue 19, Systems, coming soon." },
-            {
-                "date": "16th July 1969",
-                "url": "https://www.instagram.com/p/CkS9vSbsOVX/",
-                "image": "images/news/news3.png",
-                "description": "With the Issue 19 piece proposal deadline coming up soon, we wanted to share a resource aligning with our theme “Systems”. <br><br> Koyaanisqatsi is a non-narrative film exploring contemporary life in the United States. It consists of expansive shots of urban life and natural landscapes juxtaposed with an experimental score composed by Philip Glass. The film seeks to display modern life in a way different to that which we experience it; zooming out to display the systems and connections which govern our actions."
-            }
-        ]
-    },
     "aboutPage": {
         "description": "Paperspace is a student-led independent design magazine. Initially formed by Architecture and Civil Engineering students from the University of Bath, it has grown to include work from a range of different fields and features a unique blend of mixed media contributions from students and professionals. <br><br> We are proud of the space we have created, where all are welcome to express their thoughts, opinions and ideas about the world around us. <br><br> As a supportive, collaborative communtity, we always welcome new participants and their unique perspective. If this is a space you would like to join please contact us. <br><br> Thank you to all of the donors that help the magazine reach its full potential.",
         "sponsorImage": "images/sponsorBanner/sponsors.png",
