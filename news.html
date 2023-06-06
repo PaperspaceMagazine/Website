@@ -188,7 +188,7 @@
         <div class="subfooter section wf-section">
             <div class="mail2 w-clearfix">
                 <a class="p white first" target="_blank" id="instagram">Instagram</a>
-                <a class="p white first" target="_blank" id="issuu">issuu</a>
+                <a class="p white first" target="_blank" id="linkedin">LinkedIn</a>
                 <a class="p white left" target="_blank" id="email"></a>
             </div>
         </div>
@@ -239,7 +239,7 @@
         .then(response => response.json())
         .then(data => {
             document.querySelector('#instagram').setAttribute("href", data.socials.instagram)
-            document.querySelector('#issuu').setAttribute("href", data.socials.issuu)
+            document.querySelector('#linkedin').setAttribute("href", data.socials.linkedin)
         })
 </script>
 

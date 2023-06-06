@@ -156,7 +156,7 @@
         </div>
         <div class="dynamicWhite transparent" id="dynamicWhite"></div>
         <div class="buy-button" style="width:100px">
-            <a target="_blank" class="button w-button hide myriad" id="latestIssueIssuu">VIEW LATEST ISSUE</a>
+            <a target="_blank" class="button w-button hide myriad" id="latestIssueURL">VIEW LATEST ISSUE</a>
         </div>
         <div class="header_issue">
             <div class="text-block homepage myriad" id="latestIssueTitle"></div>
@@ -225,29 +225,33 @@
         }
     
         fetch('paperspace.json')
-            .then(response => response.json())
-            .then(data => {
-                latestMagazineCovers = data.latestMagazineCovers;
+        .then(response => response.json())
+        .then(data => {
+            latestMagazineCovers = data.latestMagazineCovers;
+            
+            // displays 9 page covers on laptop, displays 5 on mobile.
+            const numCoversToShow = window.innerWidth > 1599 ? 9 : 5;
     
-                for (let i = 0; i < 9 && i < latestMagazineCovers.length; i++) {
-                    const img = new Image();
-                    img.src = latestMagazineCovers[i].coverImage;
+            for (let i = 0; i < numCoversToShow && i < latestMagazineCovers.length; i++) {
+                const img = new Image();
+                img.src = latestMagazineCovers[i].coverImage;
     
-                    const link = document.createElement("a");
-                    link.href = latestMagazineCovers[i].url;
-                    link.target = "_blank";
-                    link.appendChild(img);
+                const link = document.createElement("a");
+                link.href = latestMagazineCovers[i].url;
+                link.target = "_blank";
+                link.appendChild(img);
     
-                    const gridItem = document.getElementById(`magazine${i}`);
-                    gridItem.appendChild(link);
-                }
+                const gridItem = document.getElementById(`magazine${i}`);
+                gridItem.appendChild(link);
+            }
     
-                // Hide the "More issues" button if all issues have been displayed initially
-                if (latestMagazineCovers.length <= 9) {
-                    const moreIssuesBtn = document.getElementById("moreIssuesBtn");
-                    moreIssuesBtn.style.display = "none";
-                }
-            });
+            // Hide the "More issues" button if all issues have been displayed initially
+            if (latestMagazineCovers.length <= 9) {
+                const moreIssuesBtn = document.getElementById("moreIssuesBtn");
+                moreIssuesBtn.style.display = "none";
+            }
+        });
+    
     </script>
 
     <script>
@@ -312,7 +316,7 @@
         <div class="subfooter section wf-section">
             <div class="mail2 w-clearfix">
                 <a class="p white first" target="_blank" id="instagram">Instagram</a>
-                <a class="p white first" target="_blank" id="issuu">issuu</a>
+                <a class="p white first" target="_blank" id="linkedin">LinkedIn</a>
                 <a class="p white left" target="_blank" id="email"></a>
             </div>
         </div>
@@ -383,9 +387,9 @@
                 document.querySelector('#tabBanner').innerText = data.mainPage.tabBanner
                 document.querySelector('#summary').innerHTML = data.mainPage.summary
                 document.querySelector('#latestIssueTitle').innerText = data.latestIssue.title
-                document.querySelector('#latestIssueIssuu').setAttribute("href", data.latestMagazineCovers[0].url)
+                document.querySelector('#latestIssueURL').setAttribute("href", data.latestMagazineCovers[0].url)
                 document.querySelector('#instagram').setAttribute("href", data.socials.instagram)
-                document.querySelector('#issuu').setAttribute("href", data.socials.issuu)
+                document.querySelector('#linkedin').setAttribute("href", data.socials.linkedin)
                 var mailTo = "mailto:";
                 mailTo += data.socials.email;
                 document.querySelector('#emailFailed').innerHTML+= data.socials.email;
