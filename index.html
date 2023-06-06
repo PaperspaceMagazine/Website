@@ -119,19 +119,19 @@
 <body class="body">
     <div class="header wf-section">
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
-            data-doc-height="1" role="banner" class="menu navbar-4 navbar-5 navi podcastnav w-nav">
-            <nav role="navigation" class="nav-menu-2 w-nav-menu">
-                <a href="index.html" class="nav_link home w-nav-link myriad">Paperspace</a>
-                <a href="#donate" class="nav_link w-nav-link myriad">Donate</a>
-                <a href="news.html" class="nav_link w-nav-link myriad">News</a>
-                <a href="about.html" class="nav_link w-nav-link myriad">About</a>
-            </nav>
-            <div class="menu-button-2-podcast w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
-                role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
-                <img src="images/favicon/paperspaceHamburger.png" alt="">
+        data-doc-height="1" role="banner" class="menu navbar-4 navbar-5 navi podcastnav w-nav">
+        <nav role="navigation" class="nav-menu-2 w-nav-menu">
+            <a href="index.html" class="nav_link home w-nav-link myriad">Paperspace</a>
+                    <a href="#donate" class="nav_link w-nav-link myriad">Donate</a>
+                    <a href="news.html" class="nav_link w-nav-link myriad">News</a>
+                    <a href="about.html" class="nav_link w-nav-link myriad">About</a>
+                </nav>
+                <div class="menu-button-2-podcast w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
+                    role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+                    <img src="images/favicon/paperspaceHamburger.png" alt="">
+                </div>
+                <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
             </div>
-            <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
-        </div>
         <div class="videoContainer">
             <video autoplay loop muted id="backgroundVideo">
                 <source id="videoSource" src="" type="video/mp4">
@@ -140,7 +140,7 @@
                 <a href="index.html" aria-current="page" class="nav_link home">Paperspace</a>
             </div>
             <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
-                data-easing2="ease" data-doc-height="1" role="banner"
+            data-easing2="ease" data-doc-height="1" role="banner"
                 class="menu navbar-4 navbar-5 navi podcastnav w-nav">
                 <nav role="navigation" class="nav-menu-2 w-nav-menu">
                     <a href="index.html" class="nav_link home w-nav-link">Paperspace</a>
@@ -154,6 +154,7 @@
                 <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-1"></div>
             </div>
         </div>
+        <div class="dynamicWhite transparent" id="dynamicWhite"></div>
         <div class="buy-button" style="width:100px">
             <a target="_blank" class="button w-button hide myriad" id="latestIssueIssuu">VIEW LATEST ISSUE</a>
         </div>
@@ -247,6 +248,22 @@
                     moreIssuesBtn.style.display = "none";
                 }
             });
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('dynamicWhite');
+            var videoHeight = document.getElementById('backgroundVideo').offsetHeight;
+            var windowWidth = window.innerWidth;
+            
+            if (windowWidth <= 1559 && window.pageYOffset > videoHeight) {
+              navbar.classList.remove('transparent');
+              navbar.classList.add('whiteBlock');
+            } else {
+              navbar.classList.remove('whiteBlock');
+              navbar.classList.add('transparent');
+            }
+          });
     </script>
 
     <script>

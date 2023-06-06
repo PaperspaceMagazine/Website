@@ -190,15 +190,23 @@ textarea {
     display: block;
     margin-top: 25px;
     margin-left: 25px;
+    z-index: 1001;
   }
 }
 
 .dynamicWhite {
-  background-color: blue;
   left: 0px;
   top: 0px;
   position: fixed;
   padding: 0px;
   width: 100%;
-  height: 80px;
+  height: 77px;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.whiteBlock {
+  background-color: white;
 }
