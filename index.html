@@ -385,7 +385,7 @@
             .then(response => response.json())
             .then(data => {
                 document.querySelector('#tabBanner').innerText = data.mainPage.tabBanner
-                document.querySelector('#summary').innerHTML = '<i class="textSummary">' + data.mainPage.summary + "</i>"
+                document.querySelector('#summary').innerHTML = '<p class="textSummary">' + data.mainPage.summary + "</p>"
                 document.querySelector('#latestIssueTitle').innerText = data.latestIssue.title
                 document.querySelector('#latestIssueURL').setAttribute("href", data.latestMagazineCovers[0].url)
                 document.querySelector('#instagram').setAttribute("href", data.socials.instagram)
