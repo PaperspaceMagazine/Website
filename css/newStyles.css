@@ -108,6 +108,14 @@ textarea {
   margin-top: 80px;
 }
 
+.textSummary {
+  text-align: center !important;
+  font-size: 23px !important;
+  font-family: Suranna, Montserrat !important;
+}
+
+
+
 .border {
   display: flex;
   justify-content: center;
@@ -125,9 +133,9 @@ textarea {
   justify-content: start;
 }
 
-.myriad {
-  font-family: "Myriad Pro", Myriad, sans-serif, Arial;
-}
+/* .myriad {
+  font-family: "Myriad Pro", Myriad;
+} */
 
 @media (max-width:1559px) {
   .whiteNavBar {
