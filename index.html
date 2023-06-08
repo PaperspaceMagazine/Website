@@ -169,16 +169,12 @@
             <p class="p textSummary" id="summary"></p>
         </div>
         <div class="container-3 w-container">
-            <div class="grid-container" style="padding-top: 0px">
+            <div class="grid-container magCovers" style="padding-top: 0px">
                 <div class="grid-item"><a target="_blank" id="magazine0"></a></div>
                 <div class="grid-item"><a target="_blank" id="magazine1"></a></div>
                 <div class="grid-item"><a target="_blank" id="magazine2"></a></div>
                 <div class="grid-item"><a target="_blank" id="magazine3"></a></div>
                 <div class="grid-item"><a target="_blank" id="magazine4"></a></div>
-                <div class="grid-item"><a target="_blank" id="magazine5"></a></div>
-                <div class="grid-item"><a target="_blank" id="magazine6"></a></div>
-                <div class="grid-item"><a target="_blank" id="magazine7"></a></div>
-                <div class="grid-item"><a target="_blank" id="magazine8"></a></div>
             </div>
             <div class="moreIssuesBtn" id="moreIssuesBtn">
                 <a target="_blank" class="button w-button myriad" id="moreIssues" onclick="showMoreIssues()">More Issues</a>
@@ -186,10 +182,29 @@
         </div>
     </div>
 </body>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+      // Check if the screen width is wider than 1599px
+      if (window.innerWidth > 1599) {
+        // Get the container element
+        var gridContainer = document.querySelector('.grid-container.magCovers');
+        
+        // Create and insert the extra div elements
+        for (var i = 5; i <= 8; i++) {
+          var div = document.createElement('div');
+          div.className = 'grid-item';
+          div.innerHTML = '<a target="_blank" id="magazine' + i + '"></a>';
+          gridContainer.appendChild(div);
+        }
+      }
+    });
+  </script>
+  
     
     <script>
         let latestMagazineCovers = [];
-        let currentIndex = 9;
+        let currentIndex = window.innerWidth > 1599 ? 9 : 5;
     
         function showMoreIssues() {
             const gridContainer = document.querySelector(".grid-container");

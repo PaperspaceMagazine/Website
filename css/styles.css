@@ -7175,8 +7175,9 @@ html.w-mod-js *[data-ix="new-interaction"] {
     }
 
     .mail2 {
-        margin-top: 0px;
+        margin-top: 20px;
         padding-right: 0px;
+        padding-bottom: 30px;
     }
 
     .story {
