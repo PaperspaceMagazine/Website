@@ -234,3 +234,14 @@ textarea {
   padding-right: 0px;
 }
 }
+
+.aboutPageDescription {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+
+.div-info.kindly {
+  /* Set a maximum width for the container */
+  max-width: 100%;
+}
