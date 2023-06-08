@@ -133,8 +133,10 @@
                 <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
             </div>
         <div class="videoContainer">
-            <video autoplay loop muted id="backgroundVideo">
-                <source id="videoSource" src="" type="video/mp4">
+            <video loop muted id="backgroundVideo">
+                <source playsinline autoplay loop muted id="videoSource" src="" type="video/mp4" data-wf-ignore="true">
+                <source playsinline autoplay loop muted id="videoSourceOGG" src="" type="video/ogg" data-wf-ignore="true">
+                <source playsinline autoplay loop muted id="videoSourceWEBM" src="" type="video/webm; codecs='vp8.0'" data-wf-ignore="true">
             </video>
             <div class="mobilePaperspace" style="width:100px">
                 <a href="index.html" aria-current="page" class="nav_link home">Paperspace</a>
@@ -289,14 +291,20 @@
         var videoContainer = document.querySelector('.videoContainer');
         var videoElement = document.getElementById('backgroundVideo');
         var videoSource = document.getElementById('videoSource');
+        var videoSourceOGG = document.getElementById('videoSourceOGG');
+        var videoSourceWEBM = document.getElementById('videoSourceWEBM');
         
         var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var deviceHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         
         if (deviceWidth > deviceHeight) {
             videoSource.src = 'videos/paperspaceLandscape.mp4';
+            videoSourceOGG.src = 'videos/paperspaceLandscape.OGG';
+            videoSourceWEBM.src = 'videos/paperspaceLandscape.webm';
         } else {
             videoSource.src = 'videos/paperspacePortrait.mp4';
+            videoSourceOGG.src = 'videos/paperspacePortrait.OGG';
+            videoSourceWEBM.src = 'videos/paperspacePortrait.webm';
         }
         
         videoElement.load();
