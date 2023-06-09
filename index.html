@@ -132,30 +132,28 @@
                 </div>
                 <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
             </div>
-        <div class="videoContainer">
-            <video background-video video-mute w-background-video w-background-video-atom id="backgroundVideo">
-                <source playsinline autoplay loop muted id="videoSource" src="" type="video/mp4" data-wf-ignore="true">
-                <source playsinline autoplay loop muted id="videoSourceOGG" src="" type="video/ogg" data-wf-ignore="true">
-                <source playsinline autoplay loop muted id="videoSourceWEBM" src="" type="video/webm; codecs='vp8.0'" data-wf-ignore="true">
-            </video>
-            <div class="mobilePaperspace" style="width:100px">
-                <a href="index.html" aria-current="page" class="nav_link home">Paperspace</a>
+            <div class="videoContainer">
+                <video autoplay loop muted id="backgroundVideo">
+                    <source id="videoSource" src="" type="video/mp4">
+                </video>
+                <div class="mobilePaperspace" style="width:100px">
+                    <a href="index.html" aria-current="page" class="nav_link home">Paperspace</a>
+                </div>
+                <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
+                    data-easing2="ease" data-doc-height="1" role="banner"
+                    class="menu navbar-4 navbar-5 navi podcastnav w-nav">
+                    <nav role="navigation" class="nav-menu-2 w-nav-menu">
+                        <a href="index.html" class="nav_link home w-nav-link">Paperspace</a>
+                        <a href="about.html" class="nav_link w-nav-link">About</a>
+                        <a href="news.html" class="nav_link w-nav-link">News</a>
+                        <a href="#donate" class="nav_link w-nav-link">Donate</a>
+                    </nav>
+                    <div class="menu-button-2-podcast w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
+                        role="button" tabindex="0" aria-controls="w-nav-overlay-1" aria-haspopup="menu"
+                        aria-expanded="false"><img src="images/favicon/paperspaceHamburger.png" alt=""></div>
+                    <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-1"></div>
+                </div>
             </div>
-            <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
-            data-easing2="ease" data-doc-height="1" role="banner"
-                class="menu navbar-4 navbar-5 navi podcastnav w-nav">
-                <nav role="navigation" class="nav-menu-2 w-nav-menu">
-                    <a href="index.html" class="nav_link home w-nav-link">Paperspace</a>
-                    <a href="about.html" class="nav_link w-nav-link myriad">About</a>
-                    <a href="news.html" class="nav_link w-nav-link myriad">News</a>
-                    <a href="#donate" class="nav_link w-nav-link myriad">Donate</a>
-                </nav>
-                <div class="menu-button-2-podcast w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
-                    role="button" tabindex="0" aria-controls="w-nav-overlay-1" aria-haspopup="menu"
-                    aria-expanded="false"><img src="images/favicon/paperspaceHamburger.png" alt=""></div>
-                <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-1"></div>
-            </div>
-        </div>
         <div class="dynamicWhite transparent" id="dynamicWhite"></div>
         <div class="buy-button" style="width:100px">
             <a target="_blank" class="button w-button hide myriad" id="latestIssueURL">VIEW LATEST ISSUE</a>
@@ -291,20 +289,14 @@
         var videoContainer = document.querySelector('.videoContainer');
         var videoElement = document.getElementById('backgroundVideo');
         var videoSource = document.getElementById('videoSource');
-        var videoSourceOGG = document.getElementById('videoSourceOGG');
-        var videoSourceWEBM = document.getElementById('videoSourceWEBM');
         
         var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var deviceHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         
         if (deviceWidth > deviceHeight) {
             videoSource.src = 'videos/paperspaceLandscape.mp4';
-            videoSourceOGG.src = 'videos/paperspaceLandscape.OGG';
-            videoSourceWEBM.src = 'videos/paperspaceLandscape.webm';
         } else {
             videoSource.src = 'videos/paperspacePortrait.mp4';
-            videoSourceOGG.src = 'videos/paperspacePortrait.OGG';
-            videoSourceWEBM.src = 'videos/paperspacePortrait.webm';
         }
         
         videoElement.load();
