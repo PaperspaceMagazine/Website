@@ -159,6 +159,7 @@
                 Widget by EmbedSocial<span>→</span> </a> </div>
         <script> (function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
     </div>
+    
     <div class="footer wf-section" id="donate">
         <div class="container-2 w-container contactUs">
             <div class="p white contactText myriad">CONTACT US<br> Currently accepting donations</div>
@@ -189,7 +190,7 @@
             <div class="mail2 w-clearfix">
                 <a class="p white first" target="_blank" id="instagram">Instagram</a>
                 <a class="p white first" target="_blank" id="linkedin">LinkedIn</a>
-                <a class="p white left" target="_blank" id="email"></a>
+                <a class="p white first" target="_blank" id="emailMail">Email</a>
             </div>
         </div>
     </div>
@@ -240,6 +241,7 @@
         .then(data => {
             document.querySelector('#instagram').setAttribute("href", data.socials.instagram)
             document.querySelector('#linkedin').setAttribute("href", data.socials.linkedin)
+            document.querySelector('#emailMail').setAttribute("href", data.socials.email)
         })
 </script>
 

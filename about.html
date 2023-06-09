@@ -219,7 +219,7 @@
             <div class="mail2 w-clearfix">
                 <a class="p white first" target="_blank" id="instagram">Instagram</a>
                 <a class="p white first" target="_blank" id="linkedin">LinkedIn</a>
-                <a class="p white left" target="_blank" id="email"></a>
+                <a class="p white first" target="_blank" id="emailMail">Email</a>
             </div>
         </div>
     </div>
@@ -309,13 +309,12 @@
             document.querySelector('#year5').innerText = data.aboutPage.team[5].year;
             document.querySelector('#editor5').innerHTML = editor5;
 
-            var mailTo = "mailto:";
-            mailTo += data.socials.email;
             document.querySelector('#emailFailed').innerHTML+= data.socials.email;
-            document.querySelector('#emailFailed').setAttribute("href", mailTo);
+            document.querySelector('#emailFailed').setAttribute("href", data.socials.email);
 
             document.querySelector('#instagram').setAttribute("href", data.socials.instagram)
             document.querySelector('#linkedin').setAttribute("href", data.socials.linkedin)
+            document.querySelector('#emailMail').setAttribute("href", data.socials.email)
 
         })
 </script>
