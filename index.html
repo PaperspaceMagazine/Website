@@ -119,42 +119,39 @@
 <body class="body">
     <div class="header wf-section">
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
-        data-doc-height="1" role="banner" class="menu navbar-4 navbar-5 navi podcastnav w-nav">
-        <nav role="navigation" class="nav-menu-2 w-nav-menu">
-            <a href="index.html" class="nav_link home w-nav-link myriad">Paperspace</a>
-            <a href="about.html" class="nav_link w-nav-link myriad">About</a>
-            <a href="news.html" class="nav_link w-nav-link myriad">News</a>
-            <a href="#donate" class="nav_link w-nav-link myriad">Donate</a>
+            data-doc-height="1" role="banner" class="menu navbar-4 navbar-5 navi podcastnav w-nav">
+            <nav role="navigation" class="nav-menu-2 w-nav-menu">
+                <a href="index.html" class="nav_link home w-nav-link myriad">Paperspace</a>
+                <a href="about.html" class="nav_link w-nav-link myriad">About</a>
+                <a href="news.html" class="nav_link w-nav-link myriad">News</a>
+                <a href="#donate" class="nav_link w-nav-link myriad">Donate</a>
+            </nav>
+            <div class="menu-button-2-podcast w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
+                role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+                <img src="images/favicon/paperspaceHamburger.png" alt="">
+            </div>
+            <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+        </div>
+        <div class="videoContainer">
+            <img id="videoSource" class="compilation" alt="Paperspace Magazine Compilation" src="">
+            <div class="mobilePaperspace" style="width:100px">
+                <a href="index.html" aria-current="page" class="nav_link home">Paperspace</a>
+            </div>
+            <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
+                data-easing2="ease" data-doc-height="1" role="banner"
+                class="menu navbar-4 navbar-5 navi podcastnav w-nav">
+                <nav role="navigation" class="nav-menu-2 w-nav-menu">
+                    <a href="index.html" class="nav_link home w-nav-link">Paperspace</a>
+                    <a href="about.html" class="nav_link w-nav-link">About</a>
+                    <a href="news.html" class="nav_link w-nav-link">News</a>
+                    <a href="#donate" class="nav_link w-nav-link">Donate</a>
                 </nav>
                 <div class="menu-button-2-podcast w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
-                    role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
-                    <img src="images/favicon/paperspaceHamburger.png" alt="">
-                </div>
-                <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+                    role="button" tabindex="0" aria-controls="w-nav-overlay-1" aria-haspopup="menu"
+                    aria-expanded="false"><img src="images/favicon/paperspaceHamburger.png" alt=""></div>
+                <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-1"></div>
             </div>
-            <div class="videoContainer">
-                <video id="c032f431-5606-22f4-b29e-4c49c45d9b17-video" autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/647718e3a88408c0f9873660_homePageVideo-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/647718e3a88408c0f9873660_homePageVideo-transcode.mp4" data-wf-ignore="true"><source src="https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/647718e3a88408c0f9873660_homePageVideo-transcode.webm" data-wf-ignore="true"></video>
-                <!-- <video playsinline autoplay loop muted id="backgroundVideo">
-                    <source id="videoSource" src="" type="video/mp4">
-                </video> -->
-                <div class="mobilePaperspace" style="width:100px">
-                    <a href="index.html" aria-current="page" class="nav_link home">Paperspace</a>
-                </div>
-                <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
-                    data-easing2="ease" data-doc-height="1" role="banner"
-                    class="menu navbar-4 navbar-5 navi podcastnav w-nav">
-                    <nav role="navigation" class="nav-menu-2 w-nav-menu">
-                        <a href="index.html" class="nav_link home w-nav-link">Paperspace</a>
-                        <a href="about.html" class="nav_link w-nav-link">About</a>
-                        <a href="news.html" class="nav_link w-nav-link">News</a>
-                        <a href="#donate" class="nav_link w-nav-link">Donate</a>
-                    </nav>
-                    <div class="menu-button-2-podcast w-nav-button" style="-webkit-user-select: text;" aria-label="menu"
-                        role="button" tabindex="0" aria-controls="w-nav-overlay-1" aria-haspopup="menu"
-                        aria-expanded="false"><img src="images/favicon/paperspaceHamburger.png" alt=""></div>
-                    <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-1"></div>
-                </div>
-            </div>
+        </div>
         <div class="dynamicWhite transparent" id="dynamicWhite"></div>
         <div class="buy-button" style="width:100px">
             <a target="_blank" class="button w-button hide myriad" id="latestIssueURL">VIEW LATEST ISSUE</a>
@@ -178,239 +175,237 @@
                 <div class="grid-item"><a target="_blank" id="magazine4"></a></div>
             </div>
             <div class="moreIssuesBtn" id="moreIssuesBtn">
-                <a target="_blank" class="button w-button myriad" id="moreIssues" onclick="showMoreIssues()">More Issues</a>
+                <a target="_blank" class="button w-button myriad" id="moreIssues" onclick="showMoreIssues()">More
+                    Issues</a>
             </div>
         </div>
     </div>
 </body>
 
 <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      // Check if the screen width is wider than 1599px
-      if (window.innerWidth > 1599) {
-        // Get the container element
-        var gridContainer = document.querySelector('.grid-container.magCovers');
-        
-        // Create and insert the extra div elements
-        for (var i = 5; i <= 8; i++) {
-          var div = document.createElement('div');
-          div.className = 'grid-item';
-          div.innerHTML = '<a target="_blank" id="magazine' + i + '"></a>';
-          gridContainer.appendChild(div);
-        }
-      }
-    });
-  </script>
-  
-    
-    <script>
-        let latestMagazineCovers = [];
-        let currentIndex = window.innerWidth > 1599 ? 9 : 5;
-    
-        function showMoreIssues() {
-            const gridContainer = document.querySelector(".grid-container");
-            const moreButton = document.getElementById("moreButton");
-    
-            // Check if there are more issues to display
-            if (currentIndex < latestMagazineCovers.length) {
-                const endIndex = latestMagazineCovers.length;
-    
-                for (let i = currentIndex; i < endIndex; i++) {
-                    const img = new Image();
-                    img.src = latestMagazineCovers[i].coverImage;
-    
-                    const link = document.createElement("a");
-                    link.href = latestMagazineCovers[i].url;
-                    link.target = "_blank";
-                    link.appendChild(img);
-    
-                    const gridItem = document.createElement("div");
-                    gridItem.classList.add("grid-item");
-                    gridItem.appendChild(link);
-    
-                    gridContainer.appendChild(gridItem);
-                }
-    
-                currentIndex = endIndex;
-    
-                // Hide the "More issues" button if all issues have been displayed
-                if (currentIndex >= latestMagazineCovers.length) {
-                    moreIssuesBtn.style.display = "none";
-                }
+    window.addEventListener('DOMContentLoaded', function () {
+        // Check if the screen width is wider than 1599px
+        if (window.innerWidth > 1599) {
+            // Get the container element
+            var gridContainer = document.querySelector('.grid-container.magCovers');
+
+            // Create and insert the extra div elements
+            for (var i = 5; i <= 8; i++) {
+                var div = document.createElement('div');
+                div.className = 'grid-item';
+                div.innerHTML = '<a target="_blank" id="magazine' + i + '"></a>';
+                gridContainer.appendChild(div);
             }
         }
-    
-        fetch('paperspace.json')
-        .then(response => response.json())
-        .then(data => {
-            latestMagazineCovers = data.latestMagazineCovers;
-            
-            // displays 9 page covers on laptop, displays 5 on mobile.
-            const numCoversToShow = window.innerWidth > 1599 ? 9 : 5;
-    
-            for (let i = 0; i < numCoversToShow && i < latestMagazineCovers.length; i++) {
+    });
+</script>
+
+
+<script>
+    let latestMagazineCovers = [];
+    let currentIndex = window.innerWidth > 1599 ? 9 : 5;
+
+    function showMoreIssues() {
+        const gridContainer = document.querySelector(".grid-container");
+        const moreButton = document.getElementById("moreButton");
+
+        // Check if there are more issues to display
+        if (currentIndex < latestMagazineCovers.length) {
+            const endIndex = latestMagazineCovers.length;
+
+            for (let i = currentIndex; i < endIndex; i++) {
                 const img = new Image();
                 img.src = latestMagazineCovers[i].coverImage;
-    
+
                 const link = document.createElement("a");
                 link.href = latestMagazineCovers[i].url;
                 link.target = "_blank";
                 link.appendChild(img);
-    
+
+                const gridItem = document.createElement("div");
+                gridItem.classList.add("grid-item");
+                gridItem.appendChild(link);
+
+                gridContainer.appendChild(gridItem);
+            }
+
+            currentIndex = endIndex;
+
+            // Hide the "More issues" button if all issues have been displayed
+            if (currentIndex >= latestMagazineCovers.length) {
+                moreIssuesBtn.style.display = "none";
+            }
+        }
+    }
+
+    fetch('paperspace.json')
+        .then(response => response.json())
+        .then(data => {
+            latestMagazineCovers = data.latestMagazineCovers;
+
+            // displays 9 page covers on laptop, displays 5 on mobile.
+            const numCoversToShow = window.innerWidth > 1599 ? 9 : 5;
+
+            for (let i = 0; i < numCoversToShow && i < latestMagazineCovers.length; i++) {
+                const img = new Image();
+                img.src = latestMagazineCovers[i].coverImage;
+
+                const link = document.createElement("a");
+                link.href = latestMagazineCovers[i].url;
+                link.target = "_blank";
+                link.appendChild(img);
+
                 const gridItem = document.getElementById(`magazine${i}`);
                 gridItem.appendChild(link);
             }
-    
+
             // Hide the "More issues" button if all issues have been displayed initially
             if (latestMagazineCovers.length <= 9) {
                 const moreIssuesBtn = document.getElementById("moreIssuesBtn");
                 moreIssuesBtn.style.display = "none";
             }
         });
-    
-    </script>
 
-    <script>
-        window.addEventListener('scroll', function() {
-            var navbar = document.getElementById('dynamicWhite');
-            var videoHeight = document.getElementById('backgroundVideo').offsetHeight;
-            var windowWidth = window.innerWidth;
-            
-            if (windowWidth <= 1559 && window.pageYOffset > videoHeight) {
-              navbar.classList.remove('transparent');
-              navbar.classList.add('whiteBlock');
-            } else {
-              navbar.classList.remove('whiteBlock');
-              navbar.classList.add('transparent');
-            }
-          });
-    </script>
+</script>
 
-    <script>
-        var videoContainer = document.querySelector('.videoContainer');
-        var videoElement = document.getElementById('backgroundVideo');
-        var videoSource = document.getElementById('videoSource');
-        
-        var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        var deviceHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-        
-        if (deviceWidth > deviceHeight) {
-            videoSource.src = 'videos/paperspaceLandscape.mp4';
+<script>
+    window.addEventListener('scroll', function () {
+        var navbar = document.getElementById('dynamicWhite');
+        var videoHeight = document.getElementById('backgroundVideo').offsetHeight;
+        var windowWidth = window.innerWidth;
+
+        if (windowWidth <= 1559 && window.pageYOffset > videoHeight) {
+            navbar.classList.remove('transparent');
+            navbar.classList.add('whiteBlock');
         } else {
-            videoSource.src = 'videos/paperspacePortrait.mp4';
+            navbar.classList.remove('whiteBlock');
+            navbar.classList.add('transparent');
         }
-        
-        videoElement.load();
-    </script>
-    
+    });
+</script>
 
-    <div class="footer wf-section" id="donate">
-        <div class="container-2 w-container contactUs">
-            <div class="p white contactText myriad">CONTACT US<br> Currently accepting donations</div>
-        </div>
-        <div class="container-2 w-container contact">
-            <div class="form-container">
-                <form id="contact-form">
-                    <div class="form-group myriad">
-                        <label class="nameForm" for="name" style="font-weight: normal;">Name:</label>
-                        <input type="text" id="name" name="name" required />
-                    </div>
-                    <div class="form-group myriad">
-                        <label for="email" style="font-weight: normal;">Email:</label>
-                        <input type="email" id="email" name="email" required />
-                    </div>
-                    <div class="form-group myriad">
-                        <label for="message" style="font-weight: normal;">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button class="rectangular-button myriad" type="submit">SUBMIT</button>
-                </form>
-                <div class="email-sent">Email Sent!</div>
-                <div class="email-failed">Email Failed :( <br> <br> Please send an email to: <a id="emailFailed"></a></div>
-            </div>
-        </div>
-        <div class="subfooter section wf-section">
-            <div class="mail2 w-clearfix">
-                <a class="p white first" target="_blank" id="instagram">Instagram</a>
-                <a class="p white first" target="_blank" id="linkedin">LinkedIn</a>
-                <a class="p white first" target="_blank" id="emailMail">Email</a>
-            </div>
+<script>
+    var videoSource = document.getElementById('videoSource');
+
+    var deviceWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var deviceHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    if (deviceWidth > deviceHeight) {
+        videoSource.src = 'videos/paperspaceLandscape.gif';
+    } else {
+        videoSource.src = 'videos/paperspacePortrait.gif';
+    }
+
+</script>
+
+
+<div class="footer wf-section" id="donate">
+    <div class="container-2 w-container contactUs">
+        <div class="p white contactText myriad">CONTACT US<br> Currently accepting donations</div>
+    </div>
+    <div class="container-2 w-container contact">
+        <div class="form-container">
+            <form id="contact-form">
+                <div class="form-group myriad">
+                    <label class="nameForm" for="name" style="font-weight: normal;">Name:</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group myriad">
+                    <label for="email" style="font-weight: normal;">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group myriad">
+                    <label for="message" style="font-weight: normal;">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button class="rectangular-button myriad" type="submit">SUBMIT</button>
+            </form>
+            <div class="email-sent">Email Sent!</div>
+            <div class="email-failed">Email Failed :( <br> <br> Please send an email to: <a id="emailFailed"></a></div>
         </div>
     </div>
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5ae19b06fe9177ae73ddc117"
-        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"></script>
-    <script src="https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/js/webflow.b0d4ef3cc.js"
-        type="text/javascript"></script>
-    <script>
-        $(function () {
-            if ($(".sticky")[0]) {
-                var stickyOffset = $('.sticky').offset().top;
+    <div class="subfooter section wf-section">
+        <div class="mail2 w-clearfix">
+            <a class="p white first" target="_blank" id="instagram">Instagram</a>
+            <a class="p white first" target="_blank" id="linkedin">LinkedIn</a>
+            <a class="p white first" target="_blank" id="emailMail">Email</a>
+        </div>
+    </div>
+</div>
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5ae19b06fe9177ae73ddc117"
+    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+<script src="https://uploads-ssl.webflow.com/5ae19b06fe9177ae73ddc117/js/webflow.b0d4ef3cc.js"
+    type="text/javascript"></script>
+<script>
+    $(function () {
+        if ($(".sticky")[0]) {
+            var stickyOffset = $('.sticky').offset().top;
 
-                $(window).scroll(function () {
-                    var sticky = $('.sticky'),
-                        scroll = $(window).scrollTop();
+            $(window).scroll(function () {
+                var sticky = $('.sticky'),
+                    scroll = $(window).scrollTop();
 
-                    if (scroll >= (stickyOffset)) sticky.addClass('fixed');
-                    else sticky.removeClass('fixed');
+                if (scroll >= (stickyOffset)) sticky.addClass('fixed');
+                else sticky.removeClass('fixed');
 
-                });
-            }
-
-            if (sessionStorage.getItem('splash') === 'true') {
-                $('.pop-up-newsletter').removeClass('splash').hide();
-            } else {
-                $('.pop-up-newsletter').addClass('splash').show();
-            }
-
-            $('.w-button').bind('click', function () {
-                sessionStorage.setItem('splash', 'true');
             });
+        }
 
-            if (window.matchMedia("(min-width: 992px)").matches) {
-                $('.divhidden').hide();
-            }
+        if (sessionStorage.getItem('splash') === 'true') {
+            $('.pop-up-newsletter').removeClass('splash').hide();
+        } else {
+            $('.pop-up-newsletter').addClass('splash').show();
+        }
+
+        $('.w-button').bind('click', function () {
+            sessionStorage.setItem('splash', 'true');
+        });
+
+        if (window.matchMedia("(min-width: 992px)").matches) {
+            $('.divhidden').hide();
+        }
 
 
 
-            $('.show').click(function () {
-                $(this).next().fadeToggle(600);
-            });
+        $('.show').click(function () {
+            $(this).next().fadeToggle(600);
+        });
 
-        });   
-    </script>
-    <script>
-        var video = $(".video-mute video"),
-            button = $(".icon-mute");
+    });   
+</script>
+<script>
+    var video = $(".video-mute video"),
+        button = $(".icon-mute");
 
-        video.prop('muted', true);
+    video.prop('muted', true);
 
-        button.click(function () {
-            if (video.prop('muted')) {
-                button.removeClass('muted');
-                video.prop('muted', false);
-            } else {
-                button.addClass('muted');
-                video.prop('muted', true);
-            }
-        }); 
-    </script>
+    button.click(function () {
+        if (video.prop('muted')) {
+            button.removeClass('muted');
+            video.prop('muted', false);
+        } else {
+            button.addClass('muted');
+            video.prop('muted', true);
+        }
+    }); 
+</script>
 
-    <script>
-        fetch('paperspace.json')
-            .then(response => response.json())
-            .then(data => {
-                document.querySelector('#tabBanner').innerText = data.mainPage.tabBanner
-                document.querySelector('#summary').innerHTML = '<p class="textSummary">' + data.mainPage.summary + "</p>"
-                document.querySelector('#latestIssueTitle').innerText = data.latestIssue.title
-                document.querySelector('#latestIssueURL').setAttribute("href", data.latestMagazineCovers[0].url)
-                document.querySelector('#instagram').setAttribute("href", data.socials.instagram)
-                document.querySelector('#linkedin').setAttribute("href", data.socials.linkedin)
-                document.querySelector('#emailMail').setAttribute("href", data.socials.email)
-                document.querySelector('#emailFailed').innerHTML+= data.socials.email;
-                document.querySelector('#emailFailed').setAttribute("href", data.socials.email);
-            })
-    </script>
+<script>
+    fetch('paperspace.json')
+        .then(response => response.json())
+        .then(data => {
+            document.querySelector('#tabBanner').innerText = data.mainPage.tabBanner
+            document.querySelector('#summary').innerHTML = '<p class="textSummary">' + data.mainPage.summary + "</p>"
+            document.querySelector('#latestIssueTitle').innerText = data.latestIssue.title
+            document.querySelector('#latestIssueURL').setAttribute("href", data.latestMagazineCovers[0].url)
+            document.querySelector('#instagram').setAttribute("href", data.socials.instagram)
+            document.querySelector('#linkedin').setAttribute("href", data.socials.linkedin)
+            document.querySelector('#emailMail').setAttribute("href", data.socials.email)
+            document.querySelector('#emailFailed').innerHTML += data.socials.email;
+            document.querySelector('#emailFailed').setAttribute("href", data.socials.email);
+        })
+</script>
 </body>
 
 </html>
