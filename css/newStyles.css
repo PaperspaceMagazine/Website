@@ -214,11 +214,11 @@ textarea {
 }
 
 .transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .whiteBlock {
-  background-color: white;
+  background-color: white !important;
 }
 
 .instagramSection {

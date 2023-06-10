@@ -152,7 +152,7 @@
                 <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-1"></div>
             </div>
         </div>
-        <div class="dynamicWhite transparent" id="dynamicWhite"></div>
+        <div class="dynamicWhite transparent !important" id="dynamicWhite"></div>
         <div class="buy-button" style="width:100px">
             <a target="_blank" class="button w-button hide myriad" id="latestIssueURL">VIEW LATEST ISSUE</a>
         </div>
@@ -271,7 +271,7 @@
 <script>
     window.addEventListener('scroll', function () {
         var navbar = document.getElementById('dynamicWhite');
-        var videoHeight = document.getElementById('backgroundVideo').offsetHeight;
+        var videoHeight = document.getElementById('videoSource').offsetHeight;
         var windowWidth = window.innerWidth;
 
         if (windowWidth <= 1559 && window.pageYOffset > videoHeight) {
