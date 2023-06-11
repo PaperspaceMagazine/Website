@@ -5,6 +5,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .grid-container.magCovers {
+    margin-top: 0px !important;
+  }
+
   .grid-item {
     width: 30%;
     text-align: center;
@@ -107,7 +112,9 @@ textarea {
 }
 
 .container-3.w-container.summary {
-  margin-top: 80px;
+  height: 35vh !important;
+  padding-top: 80px;
+  padding-bottom:80px;
 }
 
 .textSummary {
@@ -181,9 +188,18 @@ textarea {
 
 .compilation 
 {
+  margin-top: 20px;
   height: 100vh;
   width: 100%;
   object-fit: cover;
+}
+
+@media (max-width:1559px) {
+  .compilation{
+    height: 65vh;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .mobilePaperspace {
@@ -214,8 +230,8 @@ textarea {
 }
 
 .transparent {
-  /* background-color: transparent !important; */
   background-color: white !important;
+  /* background-color: transparent !important; */
 }
 
 .whiteBlock {
