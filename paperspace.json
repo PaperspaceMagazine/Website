@@ -76,10 +76,14 @@
         ]
     },
     "latestIssue": {
-        "title": "Issue N°20 Coming Soon"
+        "title": "Issue N°20 Out Now"
     },
     "latestMagazineCovers":
     [
+        {
+            "coverImage": "images/magazineCovers/issue20.png",
+            "url": "issues/20 Roots Routes.pdf"
+        },
         {
             "coverImage": "images/magazineCovers/issue19.png",
             "url": "issues/19 Systems.pdf"
