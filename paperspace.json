@@ -1,7 +1,7 @@
 {
     "mainPage": {
         "tabBanner": "Paperspace | Magazine",
-        "summary": "An independent architecture and design magazine based at the University of Bath, Paperspace is proud to celebrate its 10th year in print. <br><br> Issue N°22 Coming Soon"
+        "summary": "An independent architecture and design magazine based at the University of Bath, Paperspace is proud to celebrate its 10th year in print. <br><br> Issue N°23 Coming Soon"
     },
     "socials": {
         "instagram": "https://www.instagram.com/paperspace.magazine/",
@@ -80,10 +80,14 @@
         ]
     },
     "latestIssue": {
-        "title": "Issue N°21 Out Now"
+        "title": "Issue N°22 Out Now"
     },
     "latestMagazineCovers":
     [
+        {
+            "coverImage": "images/magazineCovers/issue22.png",
+            "url": "issues/Issue 22 Instruction.pdf"
+        },
         {
             "coverImage": "images/magazineCovers/issue21.png",
             "url": "issues/Issue 21 Spectres.pdf"
