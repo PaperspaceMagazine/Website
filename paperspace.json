@@ -85,6 +85,10 @@
     "latestMagazineCovers":
     [
         {
+            "coverImage": "images/magazineCovers/issue23.png",
+            "url": "issues/23. Sorry,No Image Available.pdf"
+        },
+        {
             "coverImage": "images/magazineCovers/issue22.png",
             "url": "issues/22 Instruction.pdf"
         },
