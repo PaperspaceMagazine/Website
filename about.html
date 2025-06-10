@@ -184,14 +184,10 @@
                         <div class="p grid-item previousEditors" id="year5"></div>
                         <div class="p grid-item previousEditors" id="editor5"></div>
                 </div>
-                <div class="div-info kindly">
-                    <div class="p detail support kindly">PAPERSPACE IS KINDLY SUPPORTED BY</div>
-                </div>
             </div>
-            <div class="div-support" id="sponsorsImg"></div>
         </div>
     </div>
-    <div class="footer wf-section" id="donate">
+    <div class="footer wf-section" id="donate" style="margin-top: 50px;">
         <div class="container-2 w-container contactUs">
             <div class="p white contactText myriad">CONTACT US<br> Currently accepting donations</div>
         </div>
@@ -271,12 +267,6 @@
         .then(data => {
 
             document.querySelector('#tabBanner').innerText = data.mainPage.tabBanner
-
-            var img = new Image();
-            img.src = data.aboutPage.sponsorImage;
-            img.setAttribute("sizes", "max-width: 479px) 100vw, (max-width: 767px) 93vw, (max-width: 991px) 685px, 937px");
-            img.setAttribute("class", "logo-support balk");
-            document.getElementById('sponsorsImg').appendChild(img)
 
             document.querySelector('#aboutPageDescription').innerHTML = data.aboutPage.description
 
