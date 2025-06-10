@@ -1,3 +1,39 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reduce footer wf-section bottom spacing */
+.footer.wf-section {
+  padding-bottom: 1rem !important;
+  margin-bottom: 0 !important;
+}
+
+.subfooter.wf-section {
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* Mobile responsive footer spacing */
+@media (max-width: 767px) {
+  .footer.wf-section {
+    padding-bottom: 0.5rem !important;
+  }
+  
+  .subfooter.wf-section {
+    padding-bottom: 0.25rem !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .footer.wf-section,
+  .subfooter.wf-section {
+    padding-bottom: 0.25rem !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 .grid-container {
     margin-top: 70px;
     margin-bottom: 70px;  
@@ -179,27 +215,30 @@ textarea {
   margin-bottom: 70px;
 }
 
-.videoContainer 
-{
-  height: 100%;
-  width: 100%;
+.header {
+  height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
-.compilation 
-{
-  margin-top: 20px;
-  height: 100vh;
+.videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
+}
+
+.compilation {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  position: relative;
+  z-index: -1;
 }
 
 @media (max-width:1559px) {
-  .compilation{
-    height: 65vh;
-    width: 100%;
-    object-fit: cover;
-  }
+  /* .compilation is handled by the main style now */
 }
 
 .mobilePaperspace {

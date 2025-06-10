@@ -5,8 +5,9 @@
 <head>
     <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
     <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="DnVejxe5pqxPRX" async></script>    
-    <link rel="stylesheet" href="css/newStyles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/newStyles.css">
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -17,19 +18,49 @@
     </script>
     <script type="text/javascript">
         window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
                 const emailSentMessage = document.querySelector('.email-sent');
                 const emailFailedMessage = document.querySelector('.email-failed');
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_plspld5', 'template_r11i3hb', this)
-                    .then(function () {
-                        emailSentMessage.style.display = 'block';
-                    }, function (error) {
-                        console.log('Email FAILED...', error);
-                        emailFailedMessage.style.display = 'block';
-                    });
-            });
+                const recaptchaError = document.querySelector('.recaptcha-error');
+                const recaptchaContainer = document.getElementById('recaptcha-form-group');
+
+                if (recaptchaContainer) {
+                    recaptchaContainer.style.display = 'none';
+                }
+
+                contactForm.addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    if (recaptchaContainer && recaptchaContainer.style.display === 'none') {
+                        recaptchaContainer.style.display = 'block';
+                        return;
+                    }
+
+                    var recaptchaResponse = grecaptcha.getResponse();
+                    if (recaptchaResponse.length === 0) {
+                        if(recaptchaError) recaptchaError.style.display = 'block';
+                        if(emailSentMessage) emailSentMessage.style.display = 'none';
+                        if(emailFailedMessage) emailFailedMessage.style.display = 'none';
+                        return;
+                    }
+                    
+                    if(recaptchaError) recaptchaError.style.display = 'none';
+
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_plspld5', 'template_r11i3hb', this)
+                        .then(function () {
+                            if(emailSentMessage) emailSentMessage.style.display = 'block';
+                            if(emailFailedMessage) emailFailedMessage.style.display = 'none';
+                            contactForm.reset();
+                            grecaptcha.reset();
+                        }, function (error) {
+                            console.log('Email FAILED...', error);
+                            if(emailFailedMessage) emailFailedMessage.style.display = 'block';
+                            if(emailSentMessage) emailSentMessage.style.display = 'none';
+                        });
+                });
+            }
         }
     </script>
 
@@ -175,6 +206,7 @@
                 <div class="grid-item"><a target="_blank" id="magazine2"></a></div>
                 <div class="grid-item"><a target="_blank" id="magazine3"></a></div>
                 <div class="grid-item"><a target="_blank" id="magazine4"></a></div>
+                <div class="grid-item"><a target="_blank" id="magazine5"></a></div>
             </div>
             <div class="moreIssuesBtn" id="moreIssuesBtn">
                 <a target="_blank" class="button w-button myriad" id="moreIssues" onclick="showMoreIssues()">More
@@ -192,7 +224,7 @@
             var gridContainer = document.querySelector('.grid-container.magCovers');
 
             // Create and insert the extra div elements
-            for (var i = 5; i <= 8; i++) {
+            for (var i = 6; i <= 8; i++) {
                 var div = document.createElement('div');
                 div.className = 'grid-item';
                 div.innerHTML = '<a target="_blank" id="magazine' + i + '"></a>';
@@ -205,7 +237,7 @@
 
 <script>
     let latestMagazineCovers = [];
-    let currentIndex = window.innerWidth > 1599 ? 9 : 5;
+    let currentIndex = window.innerWidth > 1599 ? 9 : 6;
 
     function showMoreIssues() {
         const gridContainer = document.querySelector(".grid-container");
@@ -245,8 +277,8 @@
         .then(data => {
             latestMagazineCovers = data.latestMagazineCovers;
 
-            // displays 9 page covers on laptop, displays 5 on mobile.
-            const numCoversToShow = window.innerWidth > 1599 ? 9 : 5;
+            // displays 9 page covers on laptop, displays 6 on mobile.
+            const numCoversToShow = window.innerWidth > 1599 ? 9 : 6;
 
             for (let i = 0; i < numCoversToShow && i < latestMagazineCovers.length; i++) {
                 const img = new Image();
@@ -320,17 +352,24 @@
                     <label for="message" style="font-weight: normal;">Message:</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
+                <div id="recaptcha-form-group" class="form-group myriad">
+                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+                </div>
+                <div class="recaptcha-error" style="display: none; color: red; margin-bottom: 10px;">Please complete the reCAPTCHA.</div>
                 <button class="rectangular-button myriad" type="submit">SUBMIT</button>
             </form>
             <div class="email-sent">Email Sent!</div>
             <div class="email-failed">Email Failed :( <br> <br> Please send an email to: <a id="emailFailed"></a></div>
         </div>
     </div>
-    <div class="subfooter section wf-section">
+    <div class="subfooter section wf-section" style="margin-top: 3rem;">
         <div class="mail2 w-clearfix">
             <a class="p white first" target="_blank" id="instagram">Instagram</a>
             <a class="p white first" target="_blank" id="linkedin">LinkedIn</a>
             <a class="p white first" target="_blank" id="emailMail">Email</a>
+            <a href="privacy-policy.html" class="p white first">Privacy Policy</a>
+            <a href="legal-notice.html" class="p white first">Legal Notice</a>
+            <a href="accessibility-notice.html" class="p white first">Accessibility</a>
         </div>
     </div>
 </div>
