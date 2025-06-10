@@ -6,8 +6,8 @@
     <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
     <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="DnVejxe5pqxPRX" async></script>    
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <link rel="stylesheet" href="css/newStyles.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/newStyles.css">
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -206,6 +206,7 @@
                 <div class="grid-item"><a target="_blank" id="magazine2"></a></div>
                 <div class="grid-item"><a target="_blank" id="magazine3"></a></div>
                 <div class="grid-item"><a target="_blank" id="magazine4"></a></div>
+                <div class="grid-item"><a target="_blank" id="magazine5"></a></div>
             </div>
             <div class="moreIssuesBtn" id="moreIssuesBtn">
                 <a target="_blank" class="button w-button myriad" id="moreIssues" onclick="showMoreIssues()">More
@@ -223,7 +224,7 @@
             var gridContainer = document.querySelector('.grid-container.magCovers');
 
             // Create and insert the extra div elements
-            for (var i = 5; i <= 8; i++) {
+            for (var i = 6; i <= 8; i++) {
                 var div = document.createElement('div');
                 div.className = 'grid-item';
                 div.innerHTML = '<a target="_blank" id="magazine' + i + '"></a>';
@@ -236,7 +237,7 @@
 
 <script>
     let latestMagazineCovers = [];
-    let currentIndex = window.innerWidth > 1599 ? 9 : 5;
+    let currentIndex = window.innerWidth > 1599 ? 9 : 6;
 
     function showMoreIssues() {
         const gridContainer = document.querySelector(".grid-container");
@@ -276,8 +277,8 @@
         .then(data => {
             latestMagazineCovers = data.latestMagazineCovers;
 
-            // displays 9 page covers on laptop, displays 5 on mobile.
-            const numCoversToShow = window.innerWidth > 1599 ? 9 : 5;
+            // displays 9 page covers on laptop, displays 6 on mobile.
+            const numCoversToShow = window.innerWidth > 1599 ? 9 : 6;
 
             for (let i = 0; i < numCoversToShow && i < latestMagazineCovers.length; i++) {
                 const img = new Image();
