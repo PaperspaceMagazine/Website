@@ -5,6 +5,7 @@
 <head>
     <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
     <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="DnVejxe5pqxPRX" async></script>    
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="css/newStyles.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -17,19 +18,49 @@
     </script>
     <script type="text/javascript">
         window.onload = function () {
-            document.getElementById('contact-form').addEventListener('submit', function (event) {
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
                 const emailSentMessage = document.querySelector('.email-sent');
                 const emailFailedMessage = document.querySelector('.email-failed');
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_plspld5', 'template_r11i3hb', this)
-                    .then(function () {
-                        emailSentMessage.style.display = 'block';
-                    }, function (error) {
-                        console.log('Email FAILED...', error);
-                        emailFailedMessage.style.display = 'block';
-                    });
-            });
+                const recaptchaError = document.querySelector('.recaptcha-error');
+                const recaptchaContainer = document.getElementById('recaptcha-form-group');
+
+                if (recaptchaContainer) {
+                    recaptchaContainer.style.display = 'none';
+                }
+
+                contactForm.addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    if (recaptchaContainer && recaptchaContainer.style.display === 'none') {
+                        recaptchaContainer.style.display = 'block';
+                        return;
+                    }
+
+                    var recaptchaResponse = grecaptcha.getResponse();
+                    if (recaptchaResponse.length === 0) {
+                        if(recaptchaError) recaptchaError.style.display = 'block';
+                        if(emailSentMessage) emailSentMessage.style.display = 'none';
+                        if(emailFailedMessage) emailFailedMessage.style.display = 'none';
+                        return;
+                    }
+                    
+                    if(recaptchaError) recaptchaError.style.display = 'none';
+
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_plspld5', 'template_r11i3hb', this)
+                        .then(function () {
+                            if(emailSentMessage) emailSentMessage.style.display = 'block';
+                            if(emailFailedMessage) emailFailedMessage.style.display = 'none';
+                            contactForm.reset();
+                            grecaptcha.reset();
+                        }, function (error) {
+                            console.log('Email FAILED...', error);
+                            if(emailFailedMessage) emailFailedMessage.style.display = 'block';
+                            if(emailSentMessage) emailSentMessage.style.display = 'none';
+                        });
+                });
+            }
         }
     </script>
 
@@ -320,6 +351,10 @@
                     <label for="message" style="font-weight: normal;">Message:</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
+                <div id="recaptcha-form-group" class="form-group myriad">
+                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY_HERE"></div>
+                </div>
+                <div class="recaptcha-error" style="display: none; color: red; margin-bottom: 10px;">Please complete the reCAPTCHA.</div>
                 <button class="rectangular-button myriad" type="submit">SUBMIT</button>
             </form>
             <div class="email-sent">Email Sent!</div>
