@@ -14,68 +14,82 @@
         "team": [
             {
                 "year": "2024",
-                "editorsInChief": [
-                    "Milly Ducker",
-                    "Sarah McLaren"
-                ],
-                "contentEditors": [
-                    "George Knight", 
-                    "Yukta Chegu", 
-                    "Low Wen Juin (Venisse)"
-                ],
-                "graphicalEditors": [
-                    "Meha Patel",
-                    "Vedika Manwani",
-                    "Maaria Mamujee"
-                ],
-                "socialMediaCoordinators": [
-                    "Elliott Bryant-Brown"
-                ],
-                "Activities Coordinator": [
-                    "Alexander Whitwell"
-                ]
+                "roles": {
+                    "EDITORS-IN-CHIEF": [
+                        "Milly Ducker",
+                        "Sarah McLaren"
+                    ],
+                    "CONTENT EDITORS": [
+                        "George Knight", 
+                        "Yukta Chegu", 
+                        "Low Wen Juin (Venisse)"
+                    ],
+                    "GRAPHICAL EDITORS": [
+                        "Meha Patel",
+                        "Vedika Manwani",
+                        "Maaria Mamujee"
+                    ],
+                    "SOCIAL MEDIA COORDINATORS": [
+                        "Elliott Bryant-Brown"
+                    ],
+                    "ACTIVITIES COORDINATOR": [
+                        "Alexander Whitwell"
+                    ]
+                }
             },
             {
                 "year": "2022-2023",
-                "editorsInChief": [
-                    "Daria Shiryaeva",
-                    "Jesper-Jay Harrington"
-                ]
+                "roles": {
+                    "EDITORS-IN-CHIEF": [
+                        "Daria Shiryaeva",
+                        "Jesper-Jay Harrington"
+                    ]
+                }
             },
             {
                 "year": "2021-2022",
-                "editorsInChief": [
-                    "Jamie Ferguson",
-                    "Bethany Kippin"
-                ]
+                "roles": {
+                    "EDITORS-IN-CHIEF": [
+                        "Jamie Ferguson",
+                        "Bethany Kippin"
+                    ]
+                }
             },
             {
                 "year": "2020-2021",
-                "editorsInChief": [
-                    "Amy Young"
-                ]
+                "roles": {
+                    "EDITORS-IN-CHIEF": [
+                        "Amy Young"
+                    ]
+                }
             },
             {
                 "year": "2019-2020",
-                "editorsInChief": [
-                    "Julia Korpacka",
-                    "Michael Tsang"
-                ]
+                "roles": {
+                    "EDITORS-IN-CHIEF": [
+                        "Julia Korpacka",
+                        "Michael Tsang"
+                    ]
+                }
             },
             {
                 "year": "2018-2019",
-                "editorsInChief": [
+                "roles": {
+                    "EDITORS-IN-CHIEF": [
                     "Oliwia Jackowska",
                     "Sebastian Stripp",
                     "Amy Young"
-                ]
+                    ]
+                }
             },
             {
                 "year": "2017-2018",
-                "editorsInChief": [
-                    "Diana Smiljkovic",
-                    "Olivia Harrison"
-                ]
+                "roles": {
+                    "EDITORS-IN-CHIEF": [
+                        "Diana Smiljkovic",
+                        "Olivia Harrison"
+                    ]
+                }
             }
         ]
     },
