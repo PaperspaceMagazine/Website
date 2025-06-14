@@ -32,23 +32,23 @@
                 contactForm.addEventListener('submit', function (event) {
                     event.preventDefault();
 
-                    if (recaptchaContainer && recaptchaContainer.style.display === 'none') {
-                        recaptchaContainer.style.display = 'block';
-                        return;
-                    }
+                    // if (recaptchaContainer && recaptchaContainer.style.display === 'none') {
+                    //     recaptchaContainer.style.display = 'block';
+                    //     return;
+                    // }
 
-                    var recaptchaResponse = grecaptcha.getResponse();
-                    if (recaptchaResponse.length === 0) {
-                        if(recaptchaError) recaptchaError.style.display = 'block';
-                        if(emailSentMessage) emailSentMessage.style.display = 'none';
-                        if(emailFailedMessage) emailFailedMessage.style.display = 'none';
-                        return;
-                    }
+                    // var recaptchaResponse = grecaptcha.getResponse();
+                    // if (recaptchaResponse.length === 0) {
+                    //     if(recaptchaError) recaptchaError.style.display = 'block';
+                    //     if(emailSentMessage) emailSentMessage.style.display = 'none';
+                    //     if(emailFailedMessage) emailFailedMessage.style.display = 'none';
+                    //     return;
+                    // }
                     
-                    if(recaptchaError) recaptchaError.style.display = 'none';
+                    // if(recaptchaError) recaptchaError.style.display = 'none';
 
                     // these IDs from the previous steps
-                    emailjs.sendForm('service_plspld5', 'template_r11i3hb', this)
+                    emailjs.sendForm('service_plspld5', 'template_r11i3hb', this,  'yanKdRrKXgi3tKxjK')
                         .then(function () {
                             if(emailSentMessage) emailSentMessage.style.display = 'block';
                             if(emailFailedMessage) emailFailedMessage.style.display = 'none';
@@ -359,8 +359,8 @@
                 <div class="recaptcha-error" style="display: none; color: red; margin-bottom: 10px;">Please complete the reCAPTCHA.</div>
                 <button class="rectangular-button myriad" type="submit">SUBMIT</button>
             </form>
-            <div class="email-sent">Email Sent!</div>
-            <div class="email-failed">Email Failed :( <br> <br> Please send an email to: <a id="emailFailed"></a></div>
+            <div class="email-sent">Woohoo! Your message is on its way, we'll be in touch soon.</div>
+            <div class="email-failed">Email Failed :( <br> <br> Sorry, please send an email to us at: <a id="emailFailed"></a></div>
         </div>
     </div>
     <div class="subfooter section wf-section" style="margin-top: 3rem;">
