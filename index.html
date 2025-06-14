@@ -32,20 +32,20 @@
                 contactForm.addEventListener('submit', function (event) {
                     event.preventDefault();
 
-                    // if (recaptchaContainer && recaptchaContainer.style.display === 'none') {
-                    //     recaptchaContainer.style.display = 'block';
-                    //     return;
-                    // }
+                    if (recaptchaContainer && recaptchaContainer.style.display === 'none') {
+                        recaptchaContainer.style.display = 'block';
+                        return;
+                    }
 
-                    // var recaptchaResponse = grecaptcha.getResponse();
-                    // if (recaptchaResponse.length === 0) {
-                    //     if(recaptchaError) recaptchaError.style.display = 'block';
-                    //     if(emailSentMessage) emailSentMessage.style.display = 'none';
-                    //     if(emailFailedMessage) emailFailedMessage.style.display = 'none';
-                    //     return;
-                    // }
+                    var recaptchaResponse = grecaptcha.getResponse();
+                    if (recaptchaResponse.length === 0) {
+                        if(recaptchaError) recaptchaError.style.display = 'block';
+                        if(emailSentMessage) emailSentMessage.style.display = 'none';
+                        if(emailFailedMessage) emailFailedMessage.style.display = 'none';
+                        return;
+                    }
                     
-                    // if(recaptchaError) recaptchaError.style.display = 'none';
+                    if(recaptchaError) recaptchaError.style.display = 'none';
 
                     // these IDs from the previous steps
                     emailjs.sendForm('service_plspld5', 'template_r11i3hb', this,  'yanKdRrKXgi3tKxjK')
