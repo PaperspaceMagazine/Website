@@ -115,11 +115,23 @@
 
         }
     </style>
+    <style>
+        .show {
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+        .show:hover {
+            opacity: 0.8;
+        }
+        .divhidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="body">
     <div class="whiteNavBar">
-        <div class="header wf-section">
+        <div class="header wf-section" style="height: 0px;">
             <div class="paperspace"><a href="index.html" class="nav_link home">Paperspace</a></div>
             <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
             data-easing2="ease" data-doc-height="1" role="banner"
@@ -162,27 +174,10 @@
                 <div class="about">
                     <h1 class="text-block stories nodisplay">ABOUT PAPERSPACE</h1>
                     <h1 class="p about aboutPageDescription" style="margin-top:50px; margin-bottom:30px;" id="aboutPageDescription"></h1>
-                    <div class="p about" id="editorsInChief0">EDITORS-IN-CHIEF <br></div>
-                    <div class="p about" id="contentEditors0">CONTENT&nbsp;EDITORS <br></div>
-                    <div class="p about" id="graphicalEditors0">GRAPHICAL&nbsp;EDITORS <br></div>
-                    <div class="p about" id="socialMediaCoordinators0">SOCIAL&nbsp;MEDIA&nbsp;COORDINATOR <br></div>
                     <div class="p about"><a href="http://www.willpowell.uk" target="_blank"
                             class="textlink">WEBSITE<br>Will Powell</a></div>
-                </div>
-                <div class="title-issue show magazine about-page">
-                    <p class="p about magazine">PREVIOUS EDITORS</p>
-                </div>
-                <div class="stockists divhidden grid-container previousEditors" style="display: none;">
-                        <div class="p grid-item previousEditors" id="year1"></div>
-                        <div class="p grid-item previousEditors" id="editor1"></div>
-                        <div class="p grid-item previousEditors" id="year2"></div>
-                        <div class="p grid-item previousEditors" id="editor2"></div>
-                        <div class="p grid-item previousEditors" id="year3"></div>
-                        <div class="p grid-item previousEditors" id="editor3"></div>
-                        <div class="p grid-item previousEditors" id="year4"></div>
-                        <div class="p grid-item previousEditors" id="editor4"></div>
-                        <div class="p grid-item previousEditors" id="year5"></div>
-                        <div class="p grid-item previousEditors" id="editor5"></div>
+                    <div class="p about" id="teamContainer"></div>
+                    <button id="showPreviousEditors" class="rectangular-button myriad" style="margin-top:20px;">Previous Editors</button>
                 </div>
             </div>
         </div>
@@ -250,14 +245,7 @@
                 sessionStorage.setItem('splash', 'true');
             });
 
-            if (window.matchMedia("(min-width: 992px)").matches) {
-                $('.divhidden').hide();
-            }
-
-            $('.show').click(function () {
-                $(this).next().fadeToggle(600);
-            });
-
+            $('.show').css('cursor', 'pointer');
         });   
     </script>
 </body>
@@ -265,48 +253,44 @@
     fetch('paperspace.json')
         .then(response => response.json())
         .then(data => {
-
             document.querySelector('#tabBanner').innerText = data.mainPage.tabBanner
-
             document.querySelector('#aboutPageDescription').innerHTML = data.aboutPage.description
 
-            for (var i=0; i < data.aboutPage.team[0].editorsInChief.length; i++) document.querySelector('#editorsInChief0').innerText += data.aboutPage.team[0].editorsInChief[i] + "\n";
-            for (var i=0; i < data.aboutPage.team[0].contentEditors.length; i++) document.querySelector('#contentEditors0').innerText += data.aboutPage.team[0].contentEditors[i] + "\n";
-            for (var i=0; i < data.aboutPage.team[0].graphicalEditors.length; i++) document.querySelector('#graphicalEditors0').innerText += data.aboutPage.team[0].graphicalEditors[i] + "\n";
-            for (var i=0; i < data.aboutPage.team[0].socialMediaCoordinators.length; i++) document.querySelector('#socialMediaCoordinators0').innerText += data.aboutPage.team[0].socialMediaCoordinators[i] + "\n";
+            const teamContainer = document.getElementById('teamContainer');
+            const showPreviousBtn = document.getElementById('showPreviousEditors');
 
-            var editor1 = "EDITORS-IN-CHIEF <br>";
-            for (var i=0; i < data.aboutPage.team[1].editorsInChief.length; i++) editor1 += data.aboutPage.team[1].editorsInChief[i] + "<br>";
-            document.querySelector('#year1').innerText = data.aboutPage.team[1].year;
-            document.querySelector('#editor1').innerHTML = editor1;
+            // Helper to render a team year
+            function renderTeamYear(teamYear) {
+                let html = `<div class="team-year" style="margin-top:20px;"><strong>${teamYear.year}</strong><br>`;
+                for (const [role, members] of Object.entries(teamYear.roles)) {
+                    html += `<span style="font-weight:bold;">${role}</span><br>`;
+                    members.forEach(member => {
+                        html += `${member}<br>`;
+                    });
+                }
+                html += `</div>`;
+                return html;
+            }
 
-            var editor2 = "EDITORS-IN-CHIEF <br>";
-            for (var i=0; i < data.aboutPage.team[2].editorsInChief.length; i++) editor2 += data.aboutPage.team[2].editorsInChief[i] + "<br>";
-            document.querySelector('#year2').innerText = data.aboutPage.team[2].year;
-            document.querySelector('#editor2').innerHTML = editor2;
+            // Show only the most recent year by default
+            teamContainer.innerHTML = renderTeamYear(data.aboutPage.team[0]);
 
-            var editor3 = "EDITORS-IN-CHIEF <br>";
-            for (var i=0; i < data.aboutPage.team[3].editorsInChief.length; i++) editor3 += data.aboutPage.team[3].editorsInChief[i] + "<br>";
-            document.querySelector('#year3').innerText = data.aboutPage.team[3].year;
-            document.querySelector('#editor3').innerHTML = editor3;
+            // Show previous editors on button click
+            showPreviousBtn.addEventListener('click', function() {
+                let html = teamContainer.innerHTML;
+                for (let i = 1; i < data.aboutPage.team.length; i++) {
+                    html += renderTeamYear(data.aboutPage.team[i]);
+                }
+                teamContainer.innerHTML = html;
+                showPreviousBtn.style.display = 'none'; // Hide button after click
+            });
 
-            var editor4 = "EDITORS-IN-CHIEF <br>";
-            for (var i=0; i < data.aboutPage.team[4].editorsInChief.length; i++) editor4 += data.aboutPage.team[4].editorsInChief[i] + "<br>";
-            document.querySelector('#year4').innerText = data.aboutPage.team[4].year;
-            document.querySelector('#editor4').innerHTML = editor4;
-
-            var editor5 = "EDITORS-IN-CHIEF <br>";
-            for (var i=0; i < data.aboutPage.team[5].editorsInChief.length; i++) editor5 += data.aboutPage.team[5].editorsInChief[i] + "<br>";
-            document.querySelector('#year5').innerText = data.aboutPage.team[5].year;
-            document.querySelector('#editor5').innerHTML = editor5;
-
-            document.querySelector('#emailFailed').innerHTML+= data.socials.email;
+            // Socials (unchanged)
+            document.querySelector('#emailFailed').innerHTML += data.socials.email;
             document.querySelector('#emailFailed').setAttribute("href", data.socials.email);
-
             document.querySelector('#instagram').setAttribute("href", data.socials.instagram)
             document.querySelector('#linkedin').setAttribute("href", data.socials.linkedin)
             document.querySelector('#emailMail').setAttribute("href", data.socials.email)
-
         })
 </script>
 
