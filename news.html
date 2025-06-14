@@ -121,7 +121,7 @@
 
 <body class="body">
     <div class="whiteNavBar">
-        <div class="header wf-section">
+        <div class="header wf-section" style="height: 0px;">
             <div class="paperspace"><a href="index.html" class="nav_link home">Paperspace</a></div>
             <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
                 data-easing2="ease" data-doc-height="1" role="banner"
@@ -154,7 +154,7 @@
         </div>
     </div>
 
-    <div class="instagramSection">
+    <div class="instagramSection" style="margin-bottom:50px;">
         <!-- 
           To add your Instagram feed:
           1. Go to https://elfsight.com/instagram-feed-instashow/
@@ -162,8 +162,9 @@
           3. Customize your feed and get the installation code.
           4. Replace the div below with the one from Elfsight, which will contain your unique app ID.
         -->
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-YOUR_APP_ID"></div>
+        <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-b80cb295-c197-47b1-bee9-5c8d1862bf1a" data-elfsight-app-lazy></div>
     </div>
     
     <div class="footer wf-section" id="donate">
@@ -249,6 +250,34 @@
             document.querySelector('#linkedin').setAttribute("href", data.socials.linkedin)
             document.querySelector('#emailMail').setAttribute("href", data.socials.email)
         })
+</script>
+<script>
+  // Wait until the DOM is fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Function to remove the Elfsight banner
+    function removeElfsightBanner() {
+      // Select the banner by its href attribute (unique to the Elfsight advert)
+      const banner = document.querySelector('a[href*="elfsight.com/instagram-feed-instashow"]');
+      if (banner) {
+        banner.remove();
+      }
+    }
+
+    // Run once in case the banner is already present
+    removeElfsightBanner();
+
+    // Set up a MutationObserver to watch for new nodes being added
+    const observer = new MutationObserver(function (mutationsList) {
+      for (const mutation of mutationsList) {
+        if (mutation.type === 'childList') {
+          removeElfsightBanner();
+        }
+      }
+    });
+
+    // Observe the entire document body for changes
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
 </script>
 
 </html>
