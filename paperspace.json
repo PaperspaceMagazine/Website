@@ -99,6 +99,10 @@
     "latestMagazineCovers":
     [
         {
+            "coverImage": "images/magazineCovers/Issue 24.png",
+            "url": "issues/24. Less is More.pdf"
+        },
+        {
             "coverImage": "images/magazineCovers/Issue 23.png",
             "url": "issues/23. Sorry No Image Available.pdf"
         },
