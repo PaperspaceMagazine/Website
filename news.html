@@ -185,22 +185,13 @@
         </div>
     </div>
 
-    <div class="instagramSection" style="margin-bottom:50px;">
-        <!-- 
-          To add your Instagram feed:
-          1. Go to https://elfsight.com/instagram-feed-instashow/
-          2. Click "Create Widget for Free".
-          3. Customize your feed and get the installation code.
-          4. Replace the div below with the one from Elfsight, which will contain your unique app ID.
-        -->
-        <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div class="elfsight-app-b80cb295-c197-47b1-bee9-5c8d1862bf1a" data-elfsight-app-lazy></div>
+    <div class="instagramSection" style="margin-bottom:50px; display: flex; justify-content: center; align-items: center;">
+        <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/paperspace.magazine/embed/?cr=1&amp;v=12&amp;wp=1080&amp;rd=http%3A%2F%2Flocalhost%3A8000&amp;rp=%2Fnews.html#%7B%22ci%22%3A0%2C%22os%22%3A264%2C%22ls%22%3A48%2C%22le%22%3A215%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="581" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="background: white; max-width: 540px; width: 99.375%; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
     </div>
     
     <div class="footer wf-section" id="donate">
         <div class="container-2 w-container contactUs">
-            <div class="p white contactText myriad">CONTACT US<br> We are currently accepting donations</div>
+            <div class="p white contactText myriad">CONTACT US<br> Currently accepting donations</div>
         </div>
         <div class="container-2 w-container contact">
             <div class="form-container">
@@ -288,34 +279,6 @@
             document.querySelector('#linkedin').setAttribute("href", data.socials.linkedin)
             document.querySelector('#emailMail').setAttribute("href", data.socials.email)
         })
-</script>
-<script>
-  // Wait until the DOM is fully loaded
-  document.addEventListener("DOMContentLoaded", function () {
-    // Function to remove the Elfsight banner
-    function removeElfsightBanner() {
-      // Select the banner by its href attribute (unique to the Elfsight advert)
-      const banner = document.querySelector('a[href*="elfsight.com/instagram-feed-instashow"]');
-      if (banner) {
-        banner.remove();
-      }
-    }
-
-    // Run once in case the banner is already present
-    removeElfsightBanner();
-
-    // Set up a MutationObserver to watch for new nodes being added
-    const observer = new MutationObserver(function (mutationsList) {
-      for (const mutation of mutationsList) {
-        if (mutation.type === 'childList') {
-          removeElfsightBanner();
-        }
-      }
-    });
-
-    // Observe the entire document body for changes
-    observer.observe(document.body, { childList: true, subtree: true });
-  });
 </script>
 
 </html>

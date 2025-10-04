@@ -286,12 +286,6 @@ textarea {
   max-width: 1200px;
 }
 
-@media (max-width:1559px) {
-.instagramSection {
-  padding-top: 75px;
-}
-}
-
 .aboutPageDescription {
   /* text-align: justify !important;
   text-justify: inter-word !important; */
