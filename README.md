@@ -13,3 +13,5 @@ If you are unsure how things work, send me an email on me@willpowell.uk
 
 Will
 
+# Local development
+python -m http.server 8000
