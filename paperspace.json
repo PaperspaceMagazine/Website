@@ -13,27 +13,42 @@
         "sponsorImage": "images/sponsorBanner/sponsors.png",
         "team": [
             {
-                "year": "2024",
+                "year": "2025-2026",
+                "roles": {
+                    "EDITORS-IN-CHIEF": [
+                        "Lisa Kurdziel",
+                        "Zara Mahmood"
+                    ],
+                    "CONTENT EDITORS": [
+                        "Aditi Kundan",
+                        "Ella Turner",
+                        "Katie Townsend"
+                    ],
+                    "GRAPHICS EDITORS": [
+                        "Arianna Holmshaw",
+                        "Isabella Turner",
+                        "Maaria Mamujee"
+                    ],
+                    "SOCIAL MEDIA COORDINATOR": [
+                        "Thomas Boniface"
+                    ]
+                }
+            },
+            {
+                "year": "2024-2025",
                 "roles": {
                     "EDITORS-IN-CHIEF": [
                         "Milly Ducker",
                         "Sarah McLaren"
-                    ],
-                    "CONTENT EDITORS": [
-                        "George Knight", 
-                        "Yukta Chegu", 
-                        "Low Wen Juin (Venisse)"
-                    ],
-                    "GRAPHICAL EDITORS": [
-                        "Meha Patel",
-                        "Vedika Manwani",
-                        "Maaria Mamujee"
-                    ],
-                    "SOCIAL MEDIA COORDINATORS": [
-                        "Elliott Bryant-Brown"
-                    ],
-                    "ACTIVITIES COORDINATOR": [
-                        "Alexander Whitwell"
+                    ]
+                }
+            },
+            {
+                "year": "2023-2024",
+                "roles": {
+                    "EDITORS-IN-CHIEF": [
+                        "Antar Ghazoul",
+                        "Jesper-Jay Harrington"
                     ]
                 }
             },
@@ -50,8 +65,8 @@
                 "year": "2021-2022",
                 "roles": {
                     "EDITORS-IN-CHIEF": [
-                        "Jamie Ferguson",
-                        "Bethany Kippin"
+                        "Bethany Kippin",
+                        "Jamie Ferguson"
                     ]
                 }
             },
@@ -76,9 +91,9 @@
                 "year": "2018-2019",
                 "roles": {
                     "EDITORS-IN-CHIEF": [
-                    "Oliwia Jackowska",
-                    "Sebastian Stripp",
-                    "Amy Young"
+                        "Amy Young",
+                        "Oliwia Jackowska",
+                        "Sebastian Stripp"
                     ]
                 }
             },
